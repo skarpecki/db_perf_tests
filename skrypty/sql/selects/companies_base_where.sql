@@ -1,2 +1,2 @@
 SELECT * FROM perf_tests.dbo.companies
-WHERE c.name = 'SiliconCity' AND c.sector = 'Pharma';
+WHERE name = 'SiliconCity' AND sector = 'Pharma';
