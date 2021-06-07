@@ -1,3 +1,3 @@
-BULK INSERT perf_tests.dbo.addresses
-FROM '/dane/addresses.csv'
-WITH (FIRSTROW=2, FIELDTERMINATOR=',', ROWTERMINATOR='\r\n');
+LOAD DATA INFILE '/dane/addresses.csv' INTO TABLE perf_tests.addresses
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;

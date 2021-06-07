@@ -17,13 +17,13 @@ CREATE TABLE addresses (
 	city varchar(50),
 	postal_code varchar(50),
 	house_number varchar(50),
-	mobile_phone varchar(50),
+	mobile_phone varchar(50)
 );
 
 
 CREATE TABLE companies (
 	company_id int PRIMARY KEY,
-	[name] varchar(50),
+	`name` varchar(50),
 	sector varchar(50),
 	legal_form varchar(50)
 );
@@ -31,7 +31,7 @@ CREATE TABLE companies (
 
 CREATE TABLE departments (
 	department_id int PRIMARY KEY,
-	[name] varchar(50),
+	`name` varchar(50)
 );
 
 
