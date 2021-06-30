@@ -1,3 +1,3 @@
 #! /bin/bash
 
-sudo docker build -t "mysql" .
+sudo docker build -t "mysql_srvr" .
