@@ -9,9 +9,10 @@ ENV MSSQL_TCP_PORT=1433
 
 USER root
 
-COPY ./skrypty/ /scripts
-COPY ./dane/ /dane
 RUN apt-get update \
 && apt-get install -y \
 time \
 vim
+
+COPY ./skrypty/ /scripts
+COPY ./dane/ /dane
