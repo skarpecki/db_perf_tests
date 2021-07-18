@@ -1,16 +1,23 @@
 #! /bin/bash
 
 mkdir -p /results/indexing
-count=20
+count=21
 path_base=/results/indexing
+address_query="CREATE NONCLUSTERED INDEX IX_addresses ON perf_tests.dbo.addresses (city)"
+
 
 for i in $(seq 1 $count)
 do
-mkdir -p $path_base/addresses/
-( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD \
--Q "CREATE NONCLUSTERED INDEX IX_addresses ON perf_tests.dbo.addresses (city)" > /dev/null ) \
-|& tee $path_base/addresses/$i.txt
-/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q "USE perf_tests; DROP INDEX dbo.addresses.IX_addresses;" > /dev/null 
+    if [[ "$i" -eq "0" ]]
+    then
+        time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q "$address_query"
+    else
+        mkdir -p $path_base/addresses/
+        ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD \
+        -Q "CREATE NONCLUSTERED INDEX IX_addresses ON perf_tests.dbo.addresses (city)" > /dev/null ) \
+        |& tee $path_base/addresses/$i.txt
+        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -Q "$address_query" > /dev/null 
+    fi
 done
 
 

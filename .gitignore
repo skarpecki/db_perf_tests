@@ -1,4 +1,5 @@
 sql_server/results*/
-sql_server/dane
+sql_server/dane/
 mysql/results*/
-mysql/dane
+mysql/dane/
+dane/
