@@ -21,7 +21,7 @@ mkdir -p /results/selects/$1/$2/$script_name/
     do
         if [[ "$i" -eq "0" ]] 
         then
-            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $script  | cut -c 1-100
+            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $script  | head -n 10
         else
             echo $1 $2 $i
             ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $script > /dev/null ) |& tee /results/selects/$1/$2/$script_name/$i.txt
