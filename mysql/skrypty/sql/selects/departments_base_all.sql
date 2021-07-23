@@ -1,1 +1,1 @@
-SELECT * FROM perf_tests.departments;
+SELECT * FROM perf_tests.dbo.departments;
