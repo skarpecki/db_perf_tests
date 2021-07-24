@@ -14,4 +14,4 @@ time \
 vim
 
 COPY ./skrypty/ /skrypty
-COPY /home/dev/praca_inz/dane/ /dane
+COPY .dane/ /dane
