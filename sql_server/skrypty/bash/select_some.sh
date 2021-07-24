@@ -1,17 +1,11 @@
 #! /bin/bash
 
-declare -a arr=( 
-                "$1_base_where.sql"
-                "$1_base_all.sql"
-                'one_join.sql' 
-                'one_join_where.sql'
-                'two_joins.sql'
+declare -a arr=('one_join_where.sql'
                 'two_joins_where.sql'
-                'three_joins.sql'
-                'three_joins_where.sql'
-                )
+                'three_joins_where.sql')
+                
 path='../sql/selects/'
-count=21
+count=$3
 
 for script_name in "${arr[@]}"
 do
@@ -23,7 +17,7 @@ mkdir -p /results/selects/$1/$2/$script_name/
         then
             /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $script  | head -n 10
         else
-            echo $1 $2 $i
+            echo $script_name $1 $2 $i
             ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $script > /dev/null ) |& tee /results/selects/$1/$2/$script_name/$i.txt
         fi
     done
