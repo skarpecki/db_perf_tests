@@ -2,13 +2,13 @@
 
 count=21
 
-./select_some.sh "employees" "before_index" $count
+./select_some.sh "clients" "before_index" $count
 ./employees_indexing.sh
-./select_some.sh "employees" "after_index" $count
+./select_some.sh "clients" "after_index" $count
 
-./select_some.sh "addresses" "before_index" $count
+./select_some.sh "cities" "before_index" $count
 ./addresses_indexing.sh
-./select_some.sh "addresses" "after_index" $count
+./select_some.sh "cities" "after_index" $count
 
 ./select_some.sh "companies" "before_index" $count
 ./companies_indexing.sh
