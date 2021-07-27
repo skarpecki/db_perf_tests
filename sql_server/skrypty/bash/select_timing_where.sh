@@ -3,11 +3,11 @@
 count=21
 
 ./select_where.sh "clients" "before_index" $count
-./employees_indexing.sh
+./clients_indexing.sh
 ./select_where.sh "clients" "after_index" $count
 
 ./select_where.sh "cities" "before_index" $count
-./addresses_indexing.sh
+./cities_indexing.sh
 ./select_where.sh "cities" "after_index" $count
 
 ./select_where.sh "companies" "before_index" $count
