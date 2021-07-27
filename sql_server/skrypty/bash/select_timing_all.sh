@@ -3,11 +3,11 @@
 count=6
 
 ./select_all.sh "clients" "before_index" $count
-./employees_indexing.sh
+./clients_indexing.sh
 ./select_all.sh "clients" "after_index" $count
 
 ./select_all.sh "cities" "before_index" $count
-./addresses_indexing.sh
+./cities_indexing.sh
 ./select_all.sh "cities" "after_index" $count
 
 ./select_all.sh "companies" "before_index" $count
