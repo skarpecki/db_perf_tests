@@ -17,3 +17,7 @@ count=6
 ./select_all.sh "departments" "before_index" $count
 ./departments_indexing.sh
 ./select_all.sh "departments" "after_index" $count
+
+./select_all.sh "orders" "before_index" $count
+./orders_indexing.sh
+./select_all.sh "orders" "after_index" $count
