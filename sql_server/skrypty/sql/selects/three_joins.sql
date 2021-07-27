@@ -1,4 +1,4 @@
-SELECT * FROM perf_tests.dbo.employees e 
-INNER JOIN  perf_tests.dbo.addresses a ON e.address_id = a.address_id 
-INNER JOIN perf_tests.dbo.companies c ON e.company_id = c.company_id
-INNER JOIN perf_tests.dbo.departments d ON e.department_id = d.department_id;
+SELECT * FROM perf_tests.dbo.orders o 
+INNER JOIN perf_tests.dbo.clients cl ON o.client_id = cl.client_id
+INNER JOIN  perf_tests.dbo.cities ci ON cl.city_id = ci.city_id 
+INNER JOIN perf_tests.dbo.companies co ON cl.company_id = co.company_id
