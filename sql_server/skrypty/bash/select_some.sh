@@ -1,8 +1,9 @@
 #! /bin/bash
 
-declare -a arr=('one_join_where.sql'
-                'two_joins_where.sql'
-                'three_joins_where.sql')
+declare -a arr=("$1_base_all.sql"
+		'one_join.sql'
+                'two_joins.sql'
+                'three_joins.sql')
                 
 path='../sql/selects/'
 count=$3
