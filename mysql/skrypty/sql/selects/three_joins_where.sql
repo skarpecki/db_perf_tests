@@ -1,8 +1,5 @@
-SELECT * FROM perf_tests.employees e 
-INNER JOIN  perf_tests.addresses a ON e.address_id = a.address_id 
-INNER JOIN perf_tests.companies c ON e.company_id = c.company_id
-INNER JOIN perf_tests.departments d ON e.department_id = d.department_id
-WHERE  e.first_name='Jeff'
-	AND a.city = 'ELGIN' 
-	AND c.sector = 'Pharma'
-	AND d.name = 'Marketing';
+SELECT * FROM perf_tests.orders o 
+INNER JOIN perf_tests.clients cl ON o.client_id = cl.client_id
+INNER JOIN  perf_tests.cities ci ON cl.city_id = ci.city_id 
+INNER JOIN perf_tests.companies co ON cl.company_id = co.company_id
+WHERE o.part_num = '4162pr0029'

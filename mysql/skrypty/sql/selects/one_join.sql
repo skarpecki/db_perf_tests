@@ -1,2 +1,2 @@
-SELECT * FROM perf_tests.employees e 
-INNER JOIN  perf_tests.addresses a ON e.address_id = a.address_id;
+SELECT * FROM perf_tests.clients cl 
+INNER JOIN  perf_tests.cities ci ON cl.city_id = ci.city_id;
