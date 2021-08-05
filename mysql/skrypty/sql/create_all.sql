@@ -29,7 +29,7 @@ CREATE TABLE companies (
 
 CREATE TABLE departments (
 	department_id int PRIMARY KEY,
-	`name` varchar(50),
+	`name` varchar(50)
 );
 
 
