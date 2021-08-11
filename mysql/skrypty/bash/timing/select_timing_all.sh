@@ -20,4 +20,4 @@ count=6
 
 /skrypty/bash/selecting/select_all.sh "orders" "before_index" $count
 /skrypty/bash/indexing/orders_indexing.sh
-/skrypty/bash/selecting/select_all.sh "orders" "after_index" $count]
+/skrypty/bash/selecting/select_all.sh "orders" "after_index" $count
