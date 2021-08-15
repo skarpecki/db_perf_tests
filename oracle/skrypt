@@ -1,0 +1,1 @@
+time ( sqlplus sys/Oradoc_db1@ORCLCDB as sysdba < test_script.sql > /dev/null )
