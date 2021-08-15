@@ -125,8 +125,8 @@ class SelectResultsReader:
 
 
 if __name__=="__main__":
-    mysqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\mysql\results"
-    mssqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\sql_server\results_v2\results_v2"
+    mysqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\mysql\07-08-2021\results"
+    mssqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\sql_server\27-07\results"
     pathBase = mysqlPathBase
     # path = r"D:\praca_inz_sample\1.txt"
     # reader = ResultFileReader(path)
