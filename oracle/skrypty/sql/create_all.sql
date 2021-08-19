@@ -6,6 +6,10 @@ BEGIN
   SELECT count(*) INTO user_exist FROM dba_users WHERE username='PERF_TESTS';
   IF (user_exist = 0) THEN
     EXECUTE IMMEDIATE 'CREATE USER PERF_TESTS IDENTIFIED BY password';
+   	EXECUTE IMMEDIATE 'GRANT CONNECT TO perf_tests CONTAINER=CURRENT';
+  	EXECUTE IMMEDIATE 'GRANT CREATE SESSION TO perf_tests CONTAINER=CURRENT';
+ 	EXECUTE IMMEDIATE 'GRANT RESOURCE TO perf_tests CONTAINER=CURRENT';
+ 	EXECUTE IMMEDIATE 'ALTER USER perf_tests QUOTA 2000M ON USERS';
   END IF;
 END;
 
@@ -47,7 +51,9 @@ CREATE TABLE departments (
 
 
 CREATE TABLE orders (
-	oreder_id int PRIMARY KEY,
+	order_id int PRIMARY KEY,
 	part_num varchar(50),
 	client_id int
 );
+
+
