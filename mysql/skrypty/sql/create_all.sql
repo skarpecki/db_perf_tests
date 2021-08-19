@@ -34,7 +34,7 @@ CREATE TABLE departments (
 
 
 CREATE TABLE orders (
-	oreder_id int PRIMARY KEY,
+	order_id int PRIMARY KEY,
 	part_num varchar(50),
 	client_id int
 );
