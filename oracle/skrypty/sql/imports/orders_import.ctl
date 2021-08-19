@@ -1,4 +1,4 @@
-OPTIONS (SKIP=1)
+OPTIONS (SKIP=1, ERRORS=100000, BINDSIZE=8000000, ROWS=5000)
 
 LOAD DATA
 	infile '/dane/orders.csv' "str '\r\n'"
