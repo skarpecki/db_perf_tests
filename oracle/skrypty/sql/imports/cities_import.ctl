@@ -1,8 +1,8 @@
-OPTIONS (SKIP=1, ERRORS=100000, BINDSIZE=8000000, ROWS=5000 )
+OPTIONS (SKIP=1)
 
 LOAD DATA
 	infile '/dane/cities.csv' "str '\r\n'"
-	INSERT
+	APPEND
 	INTO TABLE perf_tests.cities
 	FIELDS TERMINATED BY ','
 	(

@@ -41,5 +41,4 @@ CREATE TABLE orders (
 	part_num varchar(50),
 	client_id int
 );
-
-
+/
