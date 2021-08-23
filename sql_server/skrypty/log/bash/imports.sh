@@ -1,7 +1,7 @@
 #! /bin/bash
 
 
-for script in ../sql/imports/*.sql
+for script in skrypty/log/sql/imports/*.sql
 do
 script_name=$(basename $script .sql)
 mkdir -p /results/imports
