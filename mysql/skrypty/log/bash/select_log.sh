@@ -14,7 +14,7 @@ mkdir -p $results_path
     do
         if [[ "$i" -eq "0" ]] 
         then
-            time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < -i $script  | head -n 10
+            time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script  | head -n 10
         else
             echo $script_name $1 $i
             ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script > /dev/null ) |& tee $results_path/$i.txt
