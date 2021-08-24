@@ -2,7 +2,7 @@ OPTIONS (SKIP=1)
 
 LOAD DATA
 	infile '/dane/clients.csv' "str '\r\n'"
-	INSERT
+	APPEND
 	INTO TABLE perf_tests.clients
 	FIELDS TERMINATED BY ','
 	(
