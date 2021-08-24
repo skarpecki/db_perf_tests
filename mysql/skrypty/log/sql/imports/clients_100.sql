@@ -1,0 +1,3 @@
+LOAD DATA INFILE '/dane/clients_100.csv' INTO TABLE perf_tests.clients_100
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
