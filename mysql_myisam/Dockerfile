@@ -13,5 +13,5 @@ RUN apt-get update \
 time \
 vim
 
-COPY ./skrypty/ /skrypty
 COPY ./dane/ /dane
+COPY ./skrypty/ /skrypty
