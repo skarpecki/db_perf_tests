@@ -1,5 +1,0 @@
-mysql: [Warning] Using a password on the command line interface can be insecure.
-
-real	0m18.259s
-user	0m8.926s
-sys	0m0.602s
