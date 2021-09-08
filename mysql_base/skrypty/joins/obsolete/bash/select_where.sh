@@ -1,7 +1,6 @@
 #! /bin/bash
 
 declare -a arr=( 
-                "$1_base_where.sql"
                 'one_join_where.sql'
                 'two_joins_where.sql'
                 'three_joins_where.sql'

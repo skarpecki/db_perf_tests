@@ -27,12 +27,6 @@ CREATE TABLE companies (
 );
 
 
-CREATE TABLE departments (
-	department_id int PRIMARY KEY,
-	`name` varchar(50)
-);
-
-
 CREATE TABLE orders (
 	order_id int PRIMARY KEY,
 	part_num varchar(50),
