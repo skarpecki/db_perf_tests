@@ -8,7 +8,7 @@ truncate_script=/skrypty/create_import/sql/truncate_all.sql
 mkdir -p "$results_path"
 for import_script in /skrypty/create_import/sql/imports/*.sql
 do
-    script_name=$(basename $script .sql)
+    script_name=$(basename $import_script .sql)
     for i in $(seq 0 $count)
     do
         if [[ "$i" -eq "0" ]] 
