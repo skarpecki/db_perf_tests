@@ -8,7 +8,7 @@ mysql -u "root" -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE IF NOT EXISTS perf_te
 for import_script in /skrypty/import/sql/imports/*.sql
 do
     script_name=$(basename $import_script .sql)
-    results_path='/results/import/imports/'"$script_name"
+    results_path='/results/import/'"$script_name"
     mkdir -p "$results_path"
     for i in $(seq 0 $count)
     do
@@ -17,7 +17,7 @@ do
             mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$create_script"
             mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$import_script"
         else
-            ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$import_script" > /dev/null ) |& tee "$results_path"'/'"$script_name"'/'"$i"'.txt'
+            ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$import_script" > /dev/null ) |& tee "$results_path"'/'"$i"'.txt'
         fi
         mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $truncate_script 
     done
