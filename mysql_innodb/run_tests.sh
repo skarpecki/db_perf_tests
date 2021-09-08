@@ -1,9 +1,11 @@
 #!/bin/bash
 
 declare -a tests_types=(
-    "joins"
-    "log"
-    "group_by_order"
+    #"create"
+    "import"
+    #"joins"
+    #"log"
+    #"group_by_order"
 )
 
 declare -a cpus=(
