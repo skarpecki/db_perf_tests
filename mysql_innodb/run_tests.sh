@@ -2,7 +2,8 @@
 
 declare -a tests_types=(
     #"create"
-    "import"
+    #"import"
+    "index"
     #"joins"
     #"log"
     #"group_by_order"
