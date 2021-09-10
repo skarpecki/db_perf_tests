@@ -3,16 +3,17 @@
 declare -a tests_types=(
     #"create"
     #"import"
-    "index"
+    #"index"
+    "insert"
     #"joins"
     #"log"
     #"group_by_order"
 )
 
 declare -a cpus=(
-    1
+    #1
     2  
-    4
+    #4
 )
 
 base_path="/home/dev/praca_inz/db_perf_tests/mysql_innodb"
