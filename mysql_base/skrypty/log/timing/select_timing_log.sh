@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=2
+count=$1
 
 /skrypty/log/bash/select_log.sh "before_index" $count
 /skrypty/log/bash/clients_indexing.sh

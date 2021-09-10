@@ -3,4 +3,4 @@
 mkdir -p /results/
 /skrypty/log/bash/creates.sh |& tee /results/creates.txt
 /skrypty/log/bash/imports.sh |& tee /results/imports.txt
-/skrypty/log/timing/select_timing_log.sh |& tee /results/timing.txt
+/skrypty/log/timing/select_timing_log.sh 2 |& tee /results/timing.txt

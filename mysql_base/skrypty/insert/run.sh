@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=1
+count=2
 
 mkdir -p /results/
 

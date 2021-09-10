@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=2
+count=$1
 
 /skrypty/joins/bash/selecting/select.sh "clients" "before_index" $count
 /skrypty/joins/bash/indexing/clients_indexing.sh

@@ -1,5 +1,5 @@
 #! /bin/bash
 
-count=2
+count=$1
 
 /skrypty/import/bash/imports.sh $count
