@@ -25,7 +25,7 @@ do
         else
             ( time mysql -u 'root' -p$MYSQL_ROOT_PASSWORD \
                 -e "$create_index" ) \
-                |& tee "$results_path"'/'"$i"
+                |& tee "$results_path"'/'"$i"'.txt'
         fi
         mysql -u 'root' -p$MYSQL_ROOT_PASSWORD \
             -e "$drop_index"

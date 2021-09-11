@@ -1,31 +1,36 @@
 #!/bin/bash
 
-cpus=1
-./run.sh $cpus
-sleep 30
-docker exec -it mysql-myisam_srvr /skrypty/group_by_order/run.sh
-sleep 1
-docker cp mysql-myisam_srvr:/results/ './group_by_order/results_'"$cpus"'cpus'
-sleep 1
-./prune.sh
-sleep 1
+declare -a tests_types=(
+    "create"
+    "import"
+    "index"
+    "insert"
+    "joins"
+    "log"
+    "group_by_order"
+)
 
-cpus=2
-./run.sh $cpus
-sleep 30
-docker exec -it mysql-myisam_srvr /skrypty/group_by_order/run.sh
-sleep 1
-docker cp mysql-myisam_srvr:/results/ './group_by_order/results_'"$cpus"'cpus'
-sleep 1
-./prune.sh
-sleep 1
+declare -a cpus=(
+    1
+    2  
+    4
+)
 
-cpus=4
-./run.sh $cpus
-sleep 30
-docker exec -it mysql-myisam_srvr /skrypty/group_by_order/run.sh
-sleep 1
-docker cp mysql-myisam_srvr:/results/ './group_by_order/results__'"$cpus"'cpus'
-sleep 1
-./prune.sh
-sleep 1
+base_path="/home/dev/praca_inz/db_perf_tests/mysql_myisam"
+container="mysql-myisam_srvr"
+for test_type in ${tests_types[@]}
+do
+    echo 'Testing '"$test_type"
+    for cpu in ${cpus[@]}
+    do
+        echo 'Testing with cpus: '"$cpu"
+        results_path="$base_path"'/'"$test_type"'/results_'"$cpu"'cpus'
+        mkdir -p "$results_path"
+        "$base_path"'/run.sh' "$cpu"
+        sleep 30
+        docker exec -it "$container" '/skrypty/'"$test_type"'/run.sh'
+        sleep 5
+        docker cp "$container"':/results' "$results_path"
+        "$base_path"'/prune.sh'
+    done
+done
