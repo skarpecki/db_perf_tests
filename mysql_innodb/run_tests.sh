@@ -1,13 +1,13 @@
 #!/bin/bash
 
 declare -a tests_types=(
-    #"create"
-    #"import"
-    #"index"
+    "create"
+    "import"
+    "index"
     "insert"
-    #"joins"
-    #"log"
-    #"group_by_order"
+    "joins"
+    "log"
+    "group_by_order"
 )
 
 declare -a cpus=(
@@ -20,8 +20,10 @@ base_path="/home/dev/praca_inz/db_perf_tests/mysql_innodb"
 container="mysql-innodb_srvr"
 for test_type in ${tests_types[@]}
 do
+    echo 'Testing '"$test_type"
     for cpu in ${cpus[@]}
     do
+        echo 'Testing with cpus: '"$cpu"
         results_path="$base_path"'/'"$test_type"'/results_'"$cpu"'cpus'
         mkdir -p "$results_path"
         "$base_path"'/run.sh' "$cpu"

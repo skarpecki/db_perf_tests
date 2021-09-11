@@ -13,7 +13,7 @@ do
     then
         mysql -u 'root' -p$MYSQL_ROOT_PASSWORD < $create_script 
     else
-        ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $create_script > /dev/null ) |& tee "$results_path"'/'"$i"'.txt'
+        ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $create_script &> /dev/null ) |& tee "$results_path"'/'"$i"'.txt'
     fi
     mysql -u 'root' -p$MYSQL_ROOT_PASSWORD < $drop_script 
 done

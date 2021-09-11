@@ -1,0 +1,564 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_1000000_all before_index 1
+
+real	0m0.918s
+user	0m0.519s
+sys	0m0.096s
+clients_1000000_all before_index 2
+
+real	0m0.926s
+user	0m0.500s
+sys	0m0.102s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+clients_1000000_where before_index 1
+
+real	0m0.318s
+user	0m0.000s
+sys	0m0.013s
+clients_1000000_where before_index 2
+
+real	0m0.317s
+user	0m0.009s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_100000_all before_index 1
+
+real	0m0.105s
+user	0m0.061s
+sys	0m0.011s
+clients_100000_all before_index 2
+
+real	0m0.104s
+user	0m0.060s
+sys	0m0.011s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_100000_where before_index 1
+
+real	0m0.044s
+user	0m0.004s
+sys	0m0.008s
+clients_100000_where before_index 2
+
+real	0m0.046s
+user	0m0.007s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_10000_all before_index 1
+
+real	0m0.025s
+user	0m0.009s
+sys	0m0.012s
+clients_10000_all before_index 2
+
+real	0m0.024s
+user	0m0.010s
+sys	0m0.010s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_10000_where before_index 1
+
+real	0m0.017s
+user	0m0.005s
+sys	0m0.008s
+clients_10000_where before_index 2
+
+real	0m0.019s
+user	0m0.000s
+sys	0m0.014s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_1000_all before_index 1
+
+real	0m0.015s
+user	0m0.005s
+sys	0m0.008s
+clients_1000_all before_index 2
+
+real	0m0.015s
+user	0m0.010s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1000_where before_index 1
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.008s
+clients_1000_where before_index 2
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_100_all before_index 1
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+clients_100_all before_index 2
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.012s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_100_where before_index 1
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.009s
+clients_100_where before_index 2
+
+real	0m0.015s
+user	0m0.005s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_10_all before_index 1
+
+real	0m0.014s
+user	0m0.013s
+sys	0m0.000s
+clients_10_all before_index 2
+
+real	0m0.014s
+user	0m0.012s
+sys	0m0.002s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_10_where before_index 1
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.013s
+clients_10_where before_index 2
+
+real	0m0.016s
+user	0m0.000s
+sys	0m0.014s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1_all before_index 1
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.013s
+clients_1_all before_index 2
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1_where before_index 1
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.007s
+clients_1_where before_index 2
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_base_all before_index 1
+
+real	0m10.621s
+user	0m5.038s
+sys	0m0.918s
+clients_base_all before_index 2
+
+real	0m10.533s
+user	0m5.118s
+sys	0m0.810s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1691264	Carolina	Hurley	juan_cobb@fpk.org	435247	5	2124
+clients_base_where before_index 1
+
+real	0m4.188s
+user	0m0.000s
+sys	0m0.014s
+clients_base_where before_index 2
+
+real	0m4.217s
+user	0m0.005s
+sys	0m0.010s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m46.443s
+user	0m0.001s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.028s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.034s
+user	0m0.003s
+sys	0m0.003s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.032s
+user	0m0.006s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.042s
+user	0m0.005s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.086s
+user	0m0.006s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.646s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m5.602s
+user	0m0.000s
+sys	0m0.006s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_1000000_all after_index 1
+
+real	0m0.919s
+user	0m0.485s
+sys	0m0.110s
+clients_1000000_all after_index 2
+
+real	0m0.923s
+user	0m0.523s
+sys	0m0.073s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+clients_1000000_where after_index 1
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.008s
+clients_1000000_where after_index 2
+
+real	0m0.013s
+user	0m0.005s
+sys	0m0.006s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_100000_all after_index 1
+
+real	0m0.104s
+user	0m0.047s
+sys	0m0.023s
+clients_100000_all after_index 2
+
+real	0m0.104s
+user	0m0.060s
+sys	0m0.010s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_100000_where after_index 1
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.006s
+clients_100000_where after_index 2
+
+real	0m0.013s
+user	0m0.007s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_10000_all after_index 1
+
+real	0m0.024s
+user	0m0.015s
+sys	0m0.005s
+clients_10000_all after_index 2
+
+real	0m0.022s
+user	0m0.004s
+sys	0m0.014s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_10000_where after_index 1
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.012s
+clients_10000_where after_index 2
+
+real	0m0.013s
+user	0m0.008s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_1000_all after_index 1
+
+real	0m0.015s
+user	0m0.006s
+sys	0m0.008s
+clients_1000_all after_index 2
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1000_where after_index 1
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.013s
+clients_1000_where after_index 2
+
+real	0m0.013s
+user	0m0.008s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_100_all after_index 1
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.012s
+clients_100_all after_index 2
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_100_where after_index 1
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+clients_100_where after_index 2
+
+real	0m0.015s
+user	0m0.007s
+sys	0m0.007s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_10_all after_index 1
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+clients_10_all after_index 2
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.012s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_10_where after_index 1
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.012s
+clients_10_where after_index 2
+
+real	0m0.012s
+user	0m0.007s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1_all after_index 1
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+clients_1_all after_index 2
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+clients_1_where after_index 1
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+clients_1_where after_index 2
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+clients_base_all after_index 1
+
+real	0m10.627s
+user	0m5.158s
+sys	0m0.796s
+clients_base_all after_index 2
+
+real	0m10.621s
+user	0m5.096s
+sys	0m0.815s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1691264	Carolina	Hurley	juan_cobb@fpk.org	435247	5	2124
+clients_base_where after_index 1
+
+real	0m0.014s
+user	0m0.007s
+sys	0m0.006s
+clients_base_where after_index 2
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.011s

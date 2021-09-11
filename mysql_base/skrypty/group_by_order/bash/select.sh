@@ -17,7 +17,7 @@ mkdir -p $results_path
             mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script  | head -n 10
         else
             echo $script_name $was_indexed $i
-            ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script > /dev/null ) |& tee $results_path/$i.txt
+            ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script &> /dev/null ) |& tee $results_path/$i.txt
         fi
     done
 done

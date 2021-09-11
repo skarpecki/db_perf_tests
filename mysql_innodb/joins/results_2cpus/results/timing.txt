@@ -1,0 +1,848 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql clients before_index 1
+
+real	0m42.997s
+user	0m9.024s
+sys	0m1.760s
+one_join.sql clients before_index 2
+
+real	0m42.684s
+user	0m8.935s
+sys	0m1.884s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql clients before_index 1
+
+real	0m4.420s
+user	0m0.008s
+sys	0m0.004s
+one_join_where.sql clients before_index 2
+
+real	0m4.457s
+user	0m0.008s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql clients before_index 1
+
+real	1m27.364s
+user	0m13.296s
+sys	0m2.650s
+two_joins.sql clients before_index 2
+
+real	1m26.255s
+user	0m12.940s
+sys	0m2.761s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql clients before_index 1
+
+real	0m4.416s
+user	0m0.004s
+sys	0m0.010s
+two_joins_where.sql clients before_index 2
+
+real	0m4.431s
+user	0m0.006s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql clients before_index 1
+
+real	0m2.642s
+user	0m0.172s
+sys	0m0.076s
+three_joins.sql clients before_index 2
+
+real	0m2.650s
+user	0m0.169s
+sys	0m0.081s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql clients before_index 1
+
+real	0m0.037s
+user	0m0.007s
+sys	0m0.007s
+three_joins_where.sql clients before_index 2
+
+real	0m0.038s
+user	0m0.009s
+sys	0m0.004s
+
+real	0m50.152s
+user	0m0.006s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql clients after_index 1
+
+real	0m42.094s
+user	0m8.969s
+sys	0m1.695s
+one_join.sql clients after_index 2
+
+real	0m40.982s
+user	0m9.033s
+sys	0m1.598s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql clients after_index 1
+
+real	0m0.026s
+user	0m0.006s
+sys	0m0.006s
+one_join_where.sql clients after_index 2
+
+real	0m0.027s
+user	0m0.009s
+sys	0m0.003s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql clients after_index 1
+
+real	1m25.412s
+user	0m13.086s
+sys	0m2.826s
+two_joins.sql clients after_index 2
+
+real	1m24.744s
+user	0m12.854s
+sys	0m2.929s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql clients after_index 1
+
+real	0m0.030s
+user	0m0.005s
+sys	0m0.009s
+two_joins_where.sql clients after_index 2
+
+real	0m0.033s
+user	0m0.008s
+sys	0m0.006s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql clients after_index 1
+
+real	0m2.653s
+user	0m0.201s
+sys	0m0.057s
+three_joins.sql clients after_index 2
+
+real	0m2.679s
+user	0m0.175s
+sys	0m0.072s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql clients after_index 1
+
+real	0m0.038s
+user	0m0.005s
+sys	0m0.009s
+three_joins_where.sql clients after_index 2
+
+real	0m0.037s
+user	0m0.002s
+sys	0m0.011s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql cities before_index 1
+
+real	0m40.852s
+user	0m8.871s
+sys	0m1.741s
+one_join.sql cities before_index 2
+
+real	0m40.695s
+user	0m8.931s
+sys	0m1.768s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql cities before_index 1
+
+real	0m0.036s
+user	0m0.010s
+sys	0m0.005s
+one_join_where.sql cities before_index 2
+
+real	0m0.029s
+user	0m0.000s
+sys	0m0.014s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql cities before_index 1
+
+real	1m25.701s
+user	0m13.073s
+sys	0m2.681s
+two_joins.sql cities before_index 2
+
+real	1m25.149s
+user	0m12.853s
+sys	0m2.948s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql cities before_index 1
+
+real	0m0.040s
+user	0m0.005s
+sys	0m0.008s
+two_joins_where.sql cities before_index 2
+
+real	0m0.031s
+user	0m0.005s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql cities before_index 1
+
+real	0m2.726s
+user	0m0.168s
+sys	0m0.096s
+three_joins.sql cities before_index 2
+
+real	0m2.742s
+user	0m0.170s
+sys	0m0.087s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql cities before_index 1
+
+real	0m0.037s
+user	0m0.000s
+sys	0m0.014s
+three_joins_where.sql cities before_index 2
+
+real	0m0.037s
+user	0m0.005s
+sys	0m0.009s
+
+real	0m4.404s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql cities after_index 1
+
+real	0m43.424s
+user	0m8.964s
+sys	0m2.067s
+one_join.sql cities after_index 2
+
+real	0m45.188s
+user	0m8.774s
+sys	0m2.157s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql cities after_index 1
+
+real	0m0.033s
+user	0m0.008s
+sys	0m0.006s
+one_join_where.sql cities after_index 2
+
+real	0m0.027s
+user	0m0.004s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql cities after_index 1
+
+real	1m25.255s
+user	0m12.957s
+sys	0m2.909s
+two_joins.sql cities after_index 2
+
+real	1m25.488s
+user	0m12.680s
+sys	0m3.210s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql cities after_index 1
+
+real	0m0.027s
+user	0m0.003s
+sys	0m0.011s
+two_joins_where.sql cities after_index 2
+
+real	0m0.028s
+user	0m0.000s
+sys	0m0.015s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql cities after_index 1
+
+real	0m2.474s
+user	0m0.166s
+sys	0m0.078s
+three_joins.sql cities after_index 2
+
+real	0m2.704s
+user	0m0.169s
+sys	0m0.070s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql cities after_index 1
+
+real	0m0.037s
+user	0m0.005s
+sys	0m0.008s
+three_joins_where.sql cities after_index 2
+
+real	0m0.037s
+user	0m0.006s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql companies before_index 1
+
+real	0m41.831s
+user	0m8.992s
+sys	0m1.689s
+one_join.sql companies before_index 2
+
+real	0m43.527s
+user	0m8.696s
+sys	0m2.048s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql companies before_index 1
+
+real	0m0.033s
+user	0m0.000s
+sys	0m0.015s
+one_join_where.sql companies before_index 2
+
+real	0m0.028s
+user	0m0.005s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql companies before_index 1
+
+real	1m33.398s
+user	0m12.747s
+sys	0m3.371s
+two_joins.sql companies before_index 2
+
+real	1m31.850s
+user	0m12.944s
+sys	0m3.172s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql companies before_index 1
+
+real	0m0.027s
+user	0m0.000s
+sys	0m0.012s
+two_joins_where.sql companies before_index 2
+
+real	0m0.029s
+user	0m0.000s
+sys	0m0.012s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql companies before_index 1
+
+real	0m2.726s
+user	0m0.199s
+sys	0m0.045s
+three_joins.sql companies before_index 2
+
+real	0m2.588s
+user	0m0.190s
+sys	0m0.063s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql companies before_index 1
+
+real	0m0.037s
+user	0m0.005s
+sys	0m0.009s
+three_joins_where.sql companies before_index 2
+
+real	0m0.037s
+user	0m0.005s
+sys	0m0.008s
+
+real	0m0.155s
+user	0m0.005s
+sys	0m0.001s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql companies after_index 1
+
+real	0m47.215s
+user	0m9.085s
+sys	0m2.065s
+one_join.sql companies after_index 2
+
+real	0m46.955s
+user	0m8.953s
+sys	0m2.134s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql companies after_index 1
+
+real	0m0.031s
+user	0m0.005s
+sys	0m0.010s
+one_join_where.sql companies after_index 2
+
+real	0m0.027s
+user	0m0.013s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql companies after_index 1
+
+real	1m32.043s
+user	0m12.939s
+sys	0m3.260s
+two_joins.sql companies after_index 2
+
+real	1m30.721s
+user	0m12.761s
+sys	0m3.329s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql companies after_index 1
+
+real	0m0.021s
+user	0m0.010s
+sys	0m0.002s
+two_joins_where.sql companies after_index 2
+
+real	0m0.022s
+user	0m0.000s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql companies after_index 1
+
+real	0m2.568s
+user	0m0.159s
+sys	0m0.084s
+three_joins.sql companies after_index 2
+
+real	0m2.559s
+user	0m0.177s
+sys	0m0.072s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql companies after_index 1
+
+real	0m0.039s
+user	0m0.008s
+sys	0m0.007s
+three_joins_where.sql companies after_index 2
+
+real	0m0.037s
+user	0m0.004s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql orders before_index 1
+
+real	0m44.563s
+user	0m8.735s
+sys	0m2.032s
+one_join.sql orders before_index 2
+
+real	0m44.742s
+user	0m8.898s
+sys	0m1.895s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql orders before_index 1
+
+real	0m0.029s
+user	0m0.004s
+sys	0m0.010s
+one_join_where.sql orders before_index 2
+
+real	0m0.028s
+user	0m0.000s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql orders before_index 1
+
+real	1m31.013s
+user	0m12.983s
+sys	0m3.145s
+two_joins.sql orders before_index 2
+
+real	1m31.435s
+user	0m12.883s
+sys	0m3.345s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql orders before_index 1
+
+real	0m0.023s
+user	0m0.004s
+sys	0m0.010s
+two_joins_where.sql orders before_index 2
+
+real	0m0.026s
+user	0m0.015s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql orders before_index 1
+
+real	0m2.620s
+user	0m0.185s
+sys	0m0.067s
+three_joins.sql orders before_index 2
+
+real	0m2.641s
+user	0m0.188s
+sys	0m0.053s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql orders before_index 1
+
+real	0m0.039s
+user	0m0.006s
+sys	0m0.009s
+three_joins_where.sql orders before_index 2
+
+real	0m0.036s
+user	0m0.009s
+sys	0m0.004s
+
+real	0m0.594s
+user	0m0.001s
+sys	0m0.004s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776
+one_join.sql orders after_index 1
+
+real	0m45.959s
+user	0m8.821s
+sys	0m2.005s
+one_join.sql orders after_index 2
+
+real	0m45.270s
+user	0m8.780s
+sys	0m2.035s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744
+one_join_where.sql orders after_index 1
+
+real	0m0.032s
+user	0m0.004s
+sys	0m0.009s
+one_join_where.sql orders after_index 2
+
+real	0m0.027s
+user	0m0.005s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616	968154	United States	HORNER	26372	8616	HJQ	Pharma	LP
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492	960652	United States	RISING STAR	76471	2492	RCN	Pharma	Corp.
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748	661655	United States	BATESVILLE	72503	6748	Albandor	Health	LP
+4	Ida	Williams	dbaker@gul.com	187928	4	8116	187928	United States	CASSVILLE	53806	8116	EYD	Automotive	Co.
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244	914145	United States	HUBBARD	76648	2244	SmartBase	Pharma	LP
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273	583538	United States	SHARPSBURG	40374	6273	Leon Banks	Automotive	LLP
+7	William	Fox	kharmon@gii.com	503203	5	3894	503203	United States	BOWMANSTOWN	18030	3894	Milton Rose	Automotive	LP
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815	764305	United States	EAST BOOTHBAY	4544	4815	BookSet	Pharma	GP
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373	745306	United States	WITTER	72776	5373	MyForge	Health	Co.
+two_joins.sql orders after_index 1
+
+real	1m27.661s
+user	0m12.945s
+sys	0m2.882s
+two_joins.sql orders after_index 2
+
+real	1m27.317s
+user	0m13.129s
+sys	0m2.910s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+4305127	Mercedes	Thompson	brandon_bond@john-sweet.de	391031	8	7008	391031	United States	LAKE HELEN	32744	7008	GigaSoft	Automotive	Corporation
+two_joins_where.sql orders after_index 1
+
+real	0m0.023s
+user	0m0.000s
+sys	0m0.014s
+two_joins_where.sql orders after_index 2
+
+real	0m0.021s
+user	0m0.005s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+1	21019c00pat025pr1876	4942138	4942138	Bonita	Best	cmartin@yahoo.com	714021	1	964	714021	United States	WEST COLLEGE CORNER	47003	964	WebStar	Pharma	Ltd.
+2	3664pr9997	6426380	6426380	David	Berry	suzanne.anderson@gifkkowbtuk.com	83377	3	1257	83377	United States	FALL RIVER	2723	1257	Alstros	Automotive	GP
+3	66899	7810164	7810164	Jeffrey	Payne	anthonyday@gmx.de	595854	7	9214	595854	United States	ATTLEBORO	2703	9214	Sygnium	Health	Ltd.
+4	3040apr0001	3483485	3483485	Jordan	Gutierrez	dawncain@yahoo.com	566458	2	1037	566458	United States	SAINT JOSEPH	49085	1037	IQQ	Automotive	LP
+5	970x199pr0609	9210125	9210125	Kevin	Willis	james_smith@david-mathis.us	65444	3	578	65444	United States	FAIRBANKS	71240	578	QST	Pharma	Inc.
+6	33178	9747931	9747931	Patricia	Perez	rbecker@pndccecm.org	658491	2	8331	658491	United States	HAVANA	32333	8331	BookScout	Health	GP
+7	973c01h01pr5114	3707608	3707608	William	Ferrell	robertbentley@atfaxrc.us	69346	2	2522	69346	United States	HINGHAM	2043	2522	Orbis	Automotive	Group
+8	penupn0023	3847775	3847775	John	Lewis	rose_murray@yahoo.com	22191	3	9442	22191	United States	GLASGOW	59230	9442	OOA	Pharma	LP
+9	97149pr0929	7390299	7390299	Douglas	Rivera	adrian.lott@yahoo.com	839523	7	7355	839523	United States	AUXVASSE	65231	7355	David Little	Automotive	Inc.
+three_joins.sql orders after_index 1
+
+real	0m2.515s
+user	0m0.177s
+sys	0m0.075s
+three_joins.sql orders after_index 2
+
+real	0m2.629s
+user	0m0.224s
+sys	0m0.056s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+order_id	part_num	client_id	client_id	first_name	last_name	email	city_id	department_id	company_id	city_id	country	city	postal_code	company_id	name	sector	legal_form
+12789	4162pr0029	20148	20148	Sidney	Brown	wmendoza@mzlpu.com	384765	2	9811	384765	United States	MAUNABO	707	9811	INF	Health	LLP
+54133	4162pr0029	8092350	8092350	Bertha	Anderson	idanelson@vhzf.fr	823901	7	6227	823901	United States	BURLINGTON	5406	6227	Infinicom	Pharma	Group
+95477	4162pr0029	1813596	1813596	Gordon	Riley	creyes@teleworld.eu	63242	8	728	63242	United States	MISTON	38056	728	Travis Smith	Pharma	Group
+three_joins_where.sql orders after_index 1
+
+real	0m0.020s
+user	0m0.009s
+sys	0m0.009s
+three_joins_where.sql orders after_index 2
+
+real	0m0.017s
+user	0m0.000s
+sys	0m0.016s

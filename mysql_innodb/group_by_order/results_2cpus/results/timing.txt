@@ -1,0 +1,360 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	945
+James	Johnson	733
+James	Williams	646
+James	Brown	579
+James	Jones	577
+James	Davis	487
+John	Smith	439
+Robert	Smith	434
+John	Johnson	406
+clients_1000000_all before_index 1
+
+real	0m1.833s
+user	0m0.090s
+sys	0m0.016s
+clients_1000000_all before_index 2
+
+real	0m1.785s
+user	0m0.090s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	81
+James	Williams	69
+James	Brown	68
+James	Johnson	60
+James	Jones	56
+James	Davis	50
+Robert	Smith	43
+Michael	Smith	41
+Mary	Smith	40
+clients_100000_all before_index 1
+
+real	0m0.176s
+user	0m0.029s
+sys	0m0.005s
+clients_100000_all before_index 2
+
+real	0m0.175s
+user	0m0.025s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Brown	11
+James	Williams	9
+James	Johnson	8
+Robert	Williams	6
+John	Williams	5
+John	Johnson	5
+David	Johnson	5
+John	Smith	5
+James	Rodriguez	5
+clients_10000_all before_index 1
+
+real	0m0.028s
+user	0m0.004s
+sys	0m0.012s
+clients_10000_all before_index 2
+
+real	0m0.030s
+user	0m0.008s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Williams	3
+James	Wilson	2
+James	Garcia	2
+Josephine	Brown	2
+John	Watson	2
+Roy	Walker	2
+James	Simmons	2
+Susan	Miller	2
+Louis	Roberts	2
+clients_1000_all before_index 1
+
+real	0m0.017s
+user	0m0.005s
+sys	0m0.009s
+clients_1000_all before_index 2
+
+real	0m0.016s
+user	0m0.004s
+sys	0m0.010s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Freda	Erickson	1
+Neil	Dennis	1
+John	White	1
+Andrea	Patterson	1
+Paula	Smith	1
+Alex	Miller	1
+Rhonda	Sanders	1
+Michael	Pierce	1
+Mary	Orr	1
+clients_100_all before_index 1
+
+real	0m0.016s
+user	0m0.007s
+sys	0m0.008s
+clients_100_all before_index 2
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.009s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Amanda	Carter	1
+Jon	Brown	1
+Douglas	Justice	1
+Ida	Williams	1
+Josephine	Davis	1
+Gary	Garner	1
+William	Fox	1
+Richard	Reid	1
+Elizabeth	Bruce	1
+clients_10_all before_index 1
+
+real	0m0.015s
+user	0m0.000s
+sys	0m0.014s
+clients_10_all before_index 2
+
+real	0m0.015s
+user	0m0.008s
+sys	0m0.006s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Amanda	Carter	1
+clients_1_all before_index 1
+
+real	0m0.015s
+user	0m0.004s
+sys	0m0.010s
+clients_1_all before_index 2
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.007s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	9359
+James	Johnson	7457
+James	Williams	6507
+James	Brown	5812
+James	Jones	5749
+John	Smith	4736
+James	Davis	4545
+Robert	Smith	4455
+James	Miller	3904
+clients_base_all before_index 1
+
+real	0m20.557s
+user	0m0.189s
+sys	0m0.051s
+clients_base_all before_index 2
+
+real	0m21.332s
+user	0m0.197s
+sys	0m0.046s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m46.937s
+user	0m0.005s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.027s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.027s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.028s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.041s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.084s
+user	0m0.000s
+sys	0m0.005s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.636s
+user	0m0.005s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m5.126s
+user	0m0.006s
+sys	0m0.000s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	945
+James	Johnson	733
+James	Williams	646
+James	Brown	579
+James	Jones	577
+James	Davis	487
+John	Smith	439
+Robert	Smith	434
+John	Johnson	406
+clients_1000000_all after_index 1
+
+real	0m0.578s
+user	0m0.074s
+sys	0m0.024s
+clients_1000000_all after_index 2
+
+real	0m0.581s
+user	0m0.085s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	81
+James	Williams	69
+James	Brown	68
+James	Johnson	60
+James	Jones	56
+James	Davis	50
+Robert	Smith	43
+Michael	Smith	41
+Mary	Smith	40
+clients_100000_all after_index 1
+
+real	0m0.095s
+user	0m0.020s
+sys	0m0.010s
+clients_100000_all after_index 2
+
+real	0m0.093s
+user	0m0.021s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Brown	11
+James	Williams	9
+James	Johnson	8
+Robert	Williams	6
+David	Johnson	5
+James	Rodriguez	5
+John	Johnson	5
+John	Smith	5
+John	Williams	5
+clients_10000_all after_index 1
+
+real	0m0.024s
+user	0m0.004s
+sys	0m0.012s
+clients_10000_all after_index 2
+
+real	0m0.023s
+user	0m0.000s
+sys	0m0.015s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Williams	3
+James	Garcia	2
+James	Simmons	2
+James	Wilson	2
+Jeffrey	Miller	2
+John	Watson	2
+Josephine	Brown	2
+Louis	Roberts	2
+Roy	Walker	2
+clients_1000_all after_index 1
+
+real	0m0.015s
+user	0m0.000s
+sys	0m0.012s
+clients_1000_all after_index 2
+
+real	0m0.015s
+user	0m0.000s
+sys	0m0.013s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Mary	Cooke	1
+Paula	Smith	1
+Patrick	Holloway	1
+Patricia	Webb	1
+Neil	Dennis	1
+Mona	Smith	1
+Misty	Aguilar	1
+Mildred	Smith	1
+Michael	Pierce	1
+clients_100_all after_index 1
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.009s
+clients_100_all after_index 2
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Amanda	Carter	1
+Douglas	Justice	1
+Elizabeth	Bruce	1
+Gary	Garner	1
+Ida	Williams	1
+Jean	Gray	1
+Jon	Brown	1
+Josephine	Davis	1
+Richard	Reid	1
+clients_10_all after_index 1
+
+real	0m0.014s
+user	0m0.005s
+sys	0m0.009s
+clients_10_all after_index 2
+
+real	0m0.013s
+user	0m0.010s
+sys	0m0.001s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+Amanda	Carter	1
+clients_1_all after_index 1
+
+real	0m0.014s
+user	0m0.009s
+sys	0m0.004s
+clients_1_all after_index 2
+
+real	0m0.012s
+user	0m0.000s
+sys	0m0.011s
+mysql: [Warning] Using a password on the command line interface can be insecure.
+first_name	last_name	ppl_count
+James	Smith	9359
+James	Johnson	7457
+James	Williams	6507
+James	Brown	5812
+James	Jones	5749
+John	Smith	4736
+James	Davis	4545
+Robert	Smith	4455
+James	Miller	3904
+clients_base_all after_index 1
+
+real	0m3.737s
+user	0m0.198s
+sys	0m0.034s
+clients_base_all after_index 2
+
+real	0m3.733s
+user	0m0.181s
+sys	0m0.048s

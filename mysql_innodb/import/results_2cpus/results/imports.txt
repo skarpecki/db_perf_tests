@@ -1,0 +1,217 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+0 iteration, doing stuff
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m58.505s
+user	0m0.005s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.022s
+user	0m0.006s
+sys	0m0.008s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.020s
+user	0m0.004s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.023s
+user	0m0.004s
+sys	0m0.010s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.048s
+user	0m0.000s
+sys	0m0.014s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.294s
+user	0m0.004s
+sys	0m0.012s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.809s
+user	0m0.003s
+sys	0m0.011s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m5.644s
+user	0m0.006s
+sys	0m0.007s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	1m15.900s
+user	0m0.004s
+sys	0m0.010s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.020s
+user	0m0.000s
+sys	0m0.014s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.023s
+user	0m0.008s
+sys	0m0.006s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.051s
+user	0m0.000s
+sys	0m0.013s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.052s
+user	0m0.004s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.385s
+user	0m0.005s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m0.854s
+user	0m0.004s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+!=0 iteration
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+
+real	0m6.179s
+user	0m0.004s
+sys	0m0.009s
+Truncating
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
