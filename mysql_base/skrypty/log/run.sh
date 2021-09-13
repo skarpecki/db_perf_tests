@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=21
+count=11
 mkdir -p /results/
 /skrypty/log/bash/creates.sh |& tee /results/creates.txt
 /skrypty/log/bash/imports.sh |& tee /results/imports.txt

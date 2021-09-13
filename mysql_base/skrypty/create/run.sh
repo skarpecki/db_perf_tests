@@ -1,5 +1,5 @@
 #! /bin/bash
 
-count=21
+count=11
 mkdir -p /results/
 /skrypty/create/timing/create_timing.sh $count |& tee /results/creates.txt

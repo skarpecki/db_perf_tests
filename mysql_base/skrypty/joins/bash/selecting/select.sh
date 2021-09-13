@@ -15,11 +15,12 @@ count=$3
 
 for script_name in "${scripts_names[@]}"
 do
-results_path="/results/selects/$indexed_table/$was_indexed/$script_name"
-script="${scripts_path}$script_name"
-mkdir -p $results_path
+    results_path="/results/selects/$indexed_table/$was_indexed/$script_name"
+    script="${scripts_path}$script_name"
+    mkdir -p $results_path
     for i in $(seq 0 $count)
     do
+        echo "Joins iteration no $i"
         if [[ "$i" -eq "0" ]] 
         then
             mysql -u 'root' -p$MYSQL_ROOT_PASSWORD < $script | head -n 10

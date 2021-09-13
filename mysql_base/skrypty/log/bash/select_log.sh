@@ -12,6 +12,7 @@ results_path="/results/selects/$indexed_table/$was_indexed/$script_name"
 mkdir -p $results_path
     for i in $(seq 0 $count)
     do
+        echo "Log select iteration $i"
         if [[ "$i" -eq "0" ]] 
         then
             mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script  | head -n 10

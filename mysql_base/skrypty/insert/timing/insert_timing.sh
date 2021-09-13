@@ -11,7 +11,7 @@ mkdir -p '/results/drops'
 
 for i in $(seq 0 $count)
 do
-
+    echo "Insert iteration no $i"
     /skrypty/insert/bash/creates.sh |& tee '/results/creates/creates_'"$i"'.txt'
     /skrypty/insert/bash/imports.sh |& tee '/results/imports/imports_'"$i"'.txt'
     if [[ "$was_indexed" == "after_index" ]]

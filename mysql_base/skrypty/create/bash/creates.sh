@@ -9,6 +9,7 @@ count=$1
 mysql -u "root" -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE IF NOT EXISTS perf_tests;" > /dev/null
 for i in $(seq 0 $count)
 do
+    echo "Creating iteration: $i"
     if [[ "$i" -eq "0" ]] 
     then
         mysql -u 'root' -p$MYSQL_ROOT_PASSWORD < $create_script 

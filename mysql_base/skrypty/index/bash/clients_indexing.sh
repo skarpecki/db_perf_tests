@@ -13,6 +13,7 @@ do
 
     for i in $(seq 0 $count)
     do
+        echo "Indexing iteration: $i"
         create_index='CREATE INDEX IX_clients ON perf_tests.clients'"$val"' (first_name, last_name);'
         drop_index='DROP INDEX IX_clients ON perf_tests.clients'"$val"';'
         results_path='/results/index/clients'"$val"

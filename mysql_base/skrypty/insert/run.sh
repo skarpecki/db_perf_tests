@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=21
+count=11
 
 mkdir -p /results/
 /skrypty/insert/timing/insert_timing.sh "before_index" "$count" |& tee /results/timing.txt
