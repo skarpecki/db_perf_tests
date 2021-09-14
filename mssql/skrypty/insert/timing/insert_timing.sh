@@ -9,7 +9,7 @@ mkdir -p '/results/imports'
 mkdir -p '/results/index'
 mkdir -p '/results/drops'
 
-for i in $(seq 0 $count)
+for i in $(seq 1 $count)
 do
     echo "Insert iteration no $i"
     /skrypty/insert/bash/creates.sh |& tee '/results/creates/creates_'"$i"'.txt'

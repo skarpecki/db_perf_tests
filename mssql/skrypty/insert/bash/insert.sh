@@ -14,7 +14,7 @@ do
     then
         /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -Q "$insert"
     else
-        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -Q "$insert" &> /dev/null
+        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -Q "$insert" > /dev/null
     fi
 done
 

@@ -5,9 +5,9 @@ declare -a tests_types=(
     "import"
     "index"
     "insert"
-    # "joins"
     "log"
     "group_by_order"
+    # "joins"
 )
 
 declare -a cpus=(

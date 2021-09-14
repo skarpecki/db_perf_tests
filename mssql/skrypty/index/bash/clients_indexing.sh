@@ -1,9 +1,5 @@
 #! /bin/bash
 
-/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -i
-CREATE NONCLUSTERED INDEX IX_clients_$val ON perf_tests.dbo.clients_$val (first_name, last_name);
-
-
 count=$1
 
 for pow in $(seq 0 7)
@@ -18,8 +14,8 @@ do
     for i in $(seq 0 $count)
     do
         echo "Indexing iteration: $i"
-        create_index='CREATE NONCLUSTERED INDEX IX_clients_$val ON perf_tests.dbo.clients'"$val"' (first_name, last_name);'
-        drop_index='DROP INDEX IX_clients ON perf_tests.dbo.clients'"$val"';'
+        create_index='CREATE NONCLUSTERED INDEX IX_clients'"$val"' ON perf_tests.dbo.clients'"$val"' (first_name, last_name);'
+        drop_index='DROP INDEX IX_clients'"$val"' ON perf_tests.dbo.clients'"$val"';'
         results_path='/results/index/clients'"$val"
         mkdir -p "$results_path"
 
