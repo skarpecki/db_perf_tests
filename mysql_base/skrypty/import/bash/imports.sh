@@ -5,6 +5,7 @@ create_script="/skrypty/import/sql/create_all.sql"
 truncate_script="/skrypty/import/sql/truncate_all.sql"
 
 mysql -u "root" -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE IF NOT EXISTS perf_tests;" > /dev/null
+mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$create_script"
 for i in $(seq 0 $count)
 do
     for import_script in /skrypty/import/sql/imports/*.sql
@@ -12,7 +13,6 @@ do
         echo "Inports iteration: $i"
         script_name=$(basename $import_script .sql)
         results_path='/results/import/'"$script_name"
-        mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$create_script"
         
         mkdir -p "$results_path"
         if [[ "$i" -eq "0" ]] 

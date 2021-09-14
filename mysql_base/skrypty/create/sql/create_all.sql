@@ -1,6 +1,6 @@
 USE perf_tests;
 
-CREATE TABLE IF NOT EXISTS clients_1 (
+CREATE TABLE clients_1 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS clients_1 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_10 (
+CREATE TABLE clients_10 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS clients_10 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_100 (
+CREATE TABLE clients_100 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS clients_100 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_1000 (
+CREATE TABLE clients_1000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS clients_1000 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_10000 (
+CREATE TABLE clients_10000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS clients_10000 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_100000 (
+CREATE TABLE clients_100000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS clients_100000 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients_1000000 (
+CREATE TABLE clients_1000000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS clients_1000000 (
 );
 
 
-CREATE TABLE IF NOT EXISTS clients (
+CREATE TABLE clients (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
