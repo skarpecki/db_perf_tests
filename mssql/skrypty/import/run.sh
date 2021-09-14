@@ -1,5 +1,5 @@
 #! /bin/bash
 
-count=11
+count=1
 mkdir -p /results/
 /skrypty/import/timing/import_timing.sh $count |& tee /results/imports.txt
