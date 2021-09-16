@@ -2,6 +2,7 @@ import os
 import pandas as pd
 from enum import Enum
 import numpy as np
+from pandas.io.sql import read_sql_query
 
 
 class ResultType(Enum):
@@ -9,18 +10,31 @@ class ResultType(Enum):
     user = 2 
     sys = 3
 
-
-class QueryType(Enum):
-    select = 1
-
-
-class ResultsMetadata:
-    def __init__(self, numberOfValues, path):
-        self.numberOfValues = numberOfValues
-        self.path = path
+class TestType(Enum):
+    SELECT = "select"
+    CREATE = "create"
+    IMPORT = "import"
+    INDEX = "index"
+    INSERT = "insert"
 
 
-class ResultEntry:
+class CPUCoresMapper:
+    def __init__(self, cpu_cores_map: dict):
+        """Dict of <str: int>"""
+        self.cpu_cores_map = cpu_cores_map
+    
+    def getNumberOfCores(self, text: str) -> int:
+        return self.cpu_cores_map[text]
+
+class IndexingMapper:
+    def __init__(self, indexing_map: dict):
+        """Dict of <str: bool>"""
+        self.indexing_map = indexing_map
+
+    def getWasIndexedBool(self, text: str) -> int:
+        return self.indexing_map[text]
+
+class TimeResult:
     def __init__(self, resultType: ResultType):
         self.resultType = resultType
         self.values = []
@@ -28,34 +42,44 @@ class ResultEntry:
     def addValue(self, value):
         self.values.append(value)
 
+    def getUnfilteredStdDev(self):
+        return np.std(self.values)
+
+    def getUnfilteredMean(self):
+        return np.mean(self.values)
+
+    def getFilteredStdDev(self, no_sd_outlier):
+        return np.std(self._removeOutliers(no_sd_outlier))
     
-    def removeOutliers(self, no_SD):
+    def getFilteredMean(self, no_sd_outlier):
+        return np.mean(self._removeOutliers(no_sd_outlier))
+    
+    def _removeOutliers(self, no_sd_outlier):
         """
-        Method returns values that exceeds value [ mean (+/-) no_SD * standard_deviation ] of values array
+        Method returns values that exceeds value [ mean (+/-) no_sd_outlier * standard_deviation ] of values array
         """
-        mean = np.mean(self.values)
-        sd = np.std(self.values)
-        self.filteredValues = np.array(list(filter(lambda x: x < mean + no_SD * sd and x > mean - no_SD * sd, 
-                                self.values)))
-        return self.filteredValues
+        filtered_values = np.array(list(filter(lambda x: x < self.getUnfilteredMean() + no_sd_outlier * self.getUnfilteredStdDev() \
+                                                    and x > self.getUnfilteredMean() - no_sd_outlier * self.getUnfilteredStdDev(), 
+                                                    self.values)))
+        return filtered_values
 
 
 class ResultFileReader:
-    def __init__(self, pathToFile: str):
-        self.pathToFile = pathToFile
-        self.entryTypes = [ResultType.real, 
+    def __init__(self, file_path: str):
+        self.file_path = file_path
+        self.entry_types = [ResultType.real, 
                            ResultType.user,
                            ResultType.sys]
 
     def readFile(self):
         resulsDictionary = {}
-        with open(file=self.pathToFile) as f:
+        with open(file=self.file_path) as f:
             lines = [line.rstrip() for line in f]
             for line in lines:
                 splittedLine = line.split("\t")
-                for entryType in self.entryTypes:
-                    if splittedLine[0] == entryType.name:
-                        resulsDictionary[entryType] = ResultFileReader.parseTimeEntryToSeconds(splittedLine[1])
+                for entry_type in self.entry_types:
+                    if splittedLine[0] == entry_type.name:
+                        resulsDictionary[entry_type] = ResultFileReader.parseTimeEntryToSeconds(splittedLine[1])
         return resulsDictionary
 
     @staticmethod
@@ -67,105 +91,361 @@ class ResultFileReader:
         seconds += float(splittedEntry[1].replace("s", ""))
         return seconds 
 
-class QueryResults:
-    def __init__(self,
-                 queryType: QueryType, 
-                 isAfterIndexing: bool,
-                 indexedColumn: str,
-                 baseTable: str,
-                 isWhereUsed: bool):
-        self.queryType = queryType
-        self.resultEntriesList = {ResultType.real: ResultEntry(ResultType.real),
-                                  ResultType.user: ResultEntry(ResultType.user),
-                                  ResultType.sys:  ResultEntry(ResultType.sys)}
-        self.isAfterIndexing = isAfterIndexing
-        self.indexedColumn = indexedColumn,
-        self.baseTable = baseTable,
-        self.isWhereUsed = isWhereUsed
+class ResultsCatalogReader:
+    def __init__(self, catalog_path: str):
+        self.catalog_path = catalog_path
+        self.real_result: TimeResult = None
+        self.user_result: TimeResult = None
+        self.sys_result: TimeResult = None
 
-    def getAverageTime(self, resultType: ResultType):
-        return self.resultEntriesList[resultType].getAverage()
+    def _read_files(self):
+        self._initResults()
+        for file in os.listdir(self.catalog_path):
+            resultDict = ResultFileReader(os.path.join(self.catalog_path,file)).readFile()
+            self.real_result.addValue(resultDict[self.real_result.resultType])
+            self.user_result.addValue(resultDict[self.user_result.resultType])
+            self.sys_result.addValue(resultDict[self.sys_result.resultType])
 
+    def _initResults(self):
+        self.real_result = TimeResult(ResultType.real)
+        self.user_result = TimeResult(ResultType.user)
+        self.sys_result = TimeResult(ResultType.sys)
+
+    def getRealResult(self):
+        if not self.real_result:
+            self._read_files()
+        return self.real_result
     
-class QueryResultsFactory:
-    @staticmethod
-    def createResultClass(path: str, filename: str):
-        pass
+    def getUserResult(self):
+        if not self.user_result:
+            self._read_files()
+        return self.user_result
+    
+    def getSysResult(self):
+        if not self.sys_result:
+            self._read_files()
+        return self.sys_result
 
 
 
-
-class SelectResults:
+class CreateResultsReader:
     def __init__(self, 
-                resultsMetadata: ResultsMetadata, 
-                indexedColumn: str,
-                queryType: QueryType,
-                queryTable: str):
-        self.resultsMetadata = resultsMetadata
-        self.indexedColumn = indexedColumn
-        self.queryType = queryType
-        self.queryTable = queryTable
-        self.realResult = ResultEntry(ResultType.real)
-        self.userResult = ResultEntry(ResultType.user)
-        
-        self.sysResult = ResultEntry(ResultType.sys)
+                path: str,
+                cpu_mapper: CPUCoresMapper):
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.col_names = ["test_name", 
+                          "test_type",
+                          "cpus", 
+                          "indexed_table", 
+                          "was_indexed", 
+                          "result_size",
+                          "query",
+                          "real", 
+                          "real_stddev",
+                          "user", 
+                          "user_stddev",
+                          "sys", 
+                          "sys_stddev"]
+        self.df = pd.DataFrame(columns=self.col_names)
 
+
+    def getDataframe(self, no_sd_outlier):
+        for cpus_results in os.listdir(self.path):
+            cpus = self.cpu_mapper.getNumberOfCores(cpus_results)
+            directory = os.path.join(self.path, cpus_results, "results", "create")
+            results_catalog_reader = ResultsCatalogReader(directory)
+            real_result = results_catalog_reader.getRealResult()
+            user_result = results_catalog_reader.getUserResult()
+            sys_result = results_catalog_reader.getSysResult()
+
+            results_dict = {self.col_names[0]: "create",
+                            self.col_names[1]: TestType.CREATE.value,
+                            self.col_names[2]: cpus,
+                            self.col_names[3]: None,
+                            self.col_names[4]: None,
+                            self.col_names[5]: 0,
+                            self.col_names[6]: None,
+                            self.col_names[7]: real_result.getFilteredMean(no_sd_outlier),
+                            self.col_names[8]: real_result.getUnfilteredStdDev(),
+                            self.col_names[9]: user_result.getFilteredMean(no_sd_outlier),
+                            self.col_names[10]: user_result.getUnfilteredStdDev(),
+                            self.col_names[11]: sys_result.getFilteredMean(no_sd_outlier),
+                            self.col_names[12]: sys_result.getUnfilteredStdDev()}
+            self.df = self.df.append(results_dict, ignore_index=True)
+        return self.df
+
+class ImportResultsReader:
+    def __init__(self, 
+                path: str,
+                cpu_mapper: CPUCoresMapper):
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.col_names = ["test_name", 
+                          "test_type",
+                          "cpus", 
+                          "indexed_table", 
+                          "was_indexed", 
+                          "result_size",
+                          "query",
+                          "real", 
+                          "real_stddev",
+                          "user", 
+                          "user_stddev",
+                          "sys", 
+                          "sys_stddev"]
+        self.df = pd.DataFrame(columns=self.col_names)
+
+
+    def getDataframe(self, no_sd_outlier):
+        for cpus_results in os.listdir(self.path):
+            cpus = self.cpu_mapper.getNumberOfCores(cpus_results)
+            directory = os.path.join(self.path, cpus_results, "results", "import")
+            for query in os.listdir(directory):
+                subdirectory = os.path.join(directory, query)
+                results_catalog_reader = ResultsCatalogReader(subdirectory)
+                real_result = results_catalog_reader.getRealResult()
+                user_result = results_catalog_reader.getUserResult()
+                sys_result = results_catalog_reader.getSysResult()
+
+                results_dict = {self.col_names[0]: "import",
+                                self.col_names[1]: TestType.IMPORT.value,
+                                self.col_names[2]: cpus,
+                                self.col_names[3]: None,
+                                self.col_names[4]: None,
+                                self.col_names[5]: 0,
+                                self.col_names[6]: query,
+                                self.col_names[7]: real_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[8]: real_result.getUnfilteredStdDev(),
+                                self.col_names[9]: user_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[10]: user_result.getUnfilteredStdDev(),
+                                self.col_names[11]: sys_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[12]: sys_result.getUnfilteredStdDev()}
+                self.df = self.df.append(results_dict, ignore_index=True)
+        return self.df
+
+class InsertResultsReader:
+    def __init__(self, 
+                path: str,
+                cpu_mapper: CPUCoresMapper,
+                indexing_mapper: IndexingMapper):
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.index_mapper = indexing_mapper
+        self.col_names = ["test_name", 
+                          "test_type",
+                          "cpus", 
+                          "indexed_table", 
+                          "was_indexed", 
+                          "result_size",
+                          "query",
+                          "real", 
+                          "real_stddev",
+                          "user", 
+                          "user_stddev",
+                          "sys", 
+                          "sys_stddev"]
+        self.df = pd.DataFrame(columns=self.col_names)
+
+
+    def getDataframe(self, no_sd_outlier):
+        for cpus_results in os.listdir(self.path):
+            cpus = self.cpu_mapper.getNumberOfCores(cpus_results)
+            directory = os.path.join(self.path, cpus_results, "results", "inserts")
+
+            for was_indexed in os.listdir(directory):
+                was_indexed_bool = self.index_mapper.getWasIndexedBool(was_indexed)
+                results_files_directory = os.path.join(directory, was_indexed)
+
+                results_catalog_reader = ResultsCatalogReader(results_files_directory)
+                real_result = results_catalog_reader.getRealResult()
+                user_result = results_catalog_reader.getUserResult()
+                sys_result = results_catalog_reader.getSysResult()
+
+                results_dict = {self.col_names[0]: "inserts",
+                                self.col_names[1]: TestType.INSERT.value,
+                                self.col_names[2]: cpus,
+                                self.col_names[3]: "clients",
+                                self.col_names[4]: was_indexed_bool,
+                                self.col_names[5]: 100000,
+                                self.col_names[6]: None,
+                                self.col_names[7]: real_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[8]: real_result.getUnfilteredStdDev(),
+                                self.col_names[9]: user_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[10]: user_result.getUnfilteredStdDev(),
+                                self.col_names[11]: sys_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[12]: sys_result.getUnfilteredStdDev()}
+                self.df = self.df.append(results_dict, ignore_index=True)
+        return self.df
+
+class IndexResultsReader:
+    def __init__(self, 
+                path: str,
+                cpu_mapper: CPUCoresMapper):
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.col_names = ["test_name", 
+                          "test_type",
+                          "cpus", 
+                          "indexed_table", 
+                          "was_indexed", 
+                          "result_size",
+                          "query",
+                          "real", 
+                          "real_stddev",
+                          "user", 
+                          "user_stddev",
+                          "sys", 
+                          "sys_stddev"]
+        self.df = pd.DataFrame(columns=self.col_names)
+
+
+    def getDataframe(self, no_sd_outlier):
+        for cpus_results in os.listdir(self.path):
+            cpus = self.cpu_mapper.getNumberOfCores(cpus_results)
+            directory = os.path.join(self.path, cpus_results, "results", "index")
+            for query in os.listdir(directory):
+                subdirectory = os.path.join(directory, query)
+                results_catalog_reader = ResultsCatalogReader(subdirectory)
+                real_result = results_catalog_reader.getRealResult()
+                user_result = results_catalog_reader.getUserResult()
+                sys_result = results_catalog_reader.getSysResult()
+
+                results_dict = {self.col_names[0]: "index",
+                                self.col_names[1]: TestType.INDEX.value,
+                                self.col_names[2]: cpus,
+                                self.col_names[3]: query,
+                                self.col_names[4]: None,
+                                self.col_names[5]: 0,
+                                self.col_names[6]: query,
+                                self.col_names[7]: real_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[8]: real_result.getUnfilteredStdDev(),
+                                self.col_names[9]: user_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[10]: user_result.getUnfilteredStdDev(),
+                                self.col_names[11]: sys_result.getFilteredMean(no_sd_outlier),
+                                self.col_names[12]: sys_result.getUnfilteredStdDev()}
+                self.df = self.df.append(results_dict, ignore_index=True)
+        return self.df
 
 class SelectResultsReader:
-    def __init__(self, directory):
-        self.directory = directory
-        self.df = pd.DataFrame(columns=['real', 'user', 'sys'])
+    def __init__(self, 
+                test_name: str,
+                path: str,
+                cpu_mapper: CPUCoresMapper,
+                index_mapper: IndexingMapper):
+        self.test_name = test_name
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.index_mapper = index_mapper
+        self.col_names = ["test_name", 
+                          "test_type",
+                          "cpus", 
+                          "indexed_table", 
+                          "was_indexed", 
+                          "result_size",
+                          "query",
+                          "real", 
+                          "real_stddev",
+                          "user", 
+                          "user_stddev",
+                          "sys", 
+                          "sys_stddev"]
+        self.df = pd.DataFrame(columns=self.col_names)
 
-    def iterate_files(self):
-        for filename in os.listdir(self.directory):
-            with open(file=self.directory + "\\" + filename) as f:
-                lines = [line.rstrip() for line in f]
-                for line in lines:
-                    print(line.split("\t"))
+
+    def getDataframe(self, no_sd_outlier):
+        for cpus_results in os.listdir(self.path):
+            cpus = self.cpu_mapper.getNumberOfCores(cpus_results)
+            directory = os.path.join(self.path, cpus_results, "results", "selects")
+            
+            for indexed_table in os.listdir(directory):
+                indexed_table_directory = os.path.join(directory, indexed_table)
+                
+                for was_indexed in os.listdir(indexed_table_directory):
+                    was_indexed_bool = self.index_mapper.getWasIndexedBool(was_indexed)
+                    was_indexed_directory = os.path.join(indexed_table_directory, was_indexed)
+                
+                    for query in os.listdir(was_indexed_directory):
+                        subdirectory = os.path.join(was_indexed_directory, query)
+                        results_catalog_reader = ResultsCatalogReader(subdirectory)
+                        real_result = results_catalog_reader.getRealResult()
+                        user_result = results_catalog_reader.getUserResult()
+                        sys_result = results_catalog_reader.getSysResult()
+
+                        results_dict = {self.col_names[0]: self.test_name,
+                                        self.col_names[1]: TestType.SELECT.value,
+                                        self.col_names[2]: cpus,
+                                        self.col_names[3]: indexed_table,
+                                        self.col_names[4]: was_indexed_bool,
+                                        self.col_names[5]: 0,
+                                        self.col_names[6]: query,
+                                        self.col_names[7]: real_result.getFilteredMean(no_sd_outlier),
+                                        self.col_names[8]: real_result.getUnfilteredStdDev(),
+                                        self.col_names[9]: user_result.getFilteredMean(no_sd_outlier),
+                                        self.col_names[10]: user_result.getUnfilteredStdDev(),
+                                        self.col_names[11]: sys_result.getFilteredMean(no_sd_outlier),
+                                        self.col_names[12]: sys_result.getUnfilteredStdDev()}
+                        self.df = self.df.append(results_dict, ignore_index=True)
+        return self.df
+
+class ResultsReader:
+    def __init__(self, 
+                test_type: TestType,
+                path: str,
+                cpu_mapper: CPUCoresMapper,
+                index_mapper: IndexingMapper,
+                **kwargs):
+        self.test_type = test_type
+        self.path = path
+        self.cpu_mapper = cpu_mapper
+        self.index_mapper = index_mapper
+        self.test_name = kwargs.get("test_name", str(test_type))
+        self.result_reader = self._createResultsReader()
+        
+    def _createResultsReader(self):
+        if self.test_type ==  TestType.SELECT:
+            return SelectResultsReader(self.test_name,
+                                        self.path,
+                                        self.cpu_mapper,
+                                        self.index_mapper)
+        elif self.test_type == TestType.IMPORT:
+            return ImportResultsReader(self.path, self.cpu_mapper)
+        elif self.test_type == TestType.CREATE:
+            return CreateResultsReader(self.path, self.cpu_mapper)
+        elif self.test_type == TestType.INSERT:
+            return InsertResultsReader(self.path, self.cpu_mapper, self.index_mapper)
+        elif self.test_type == TestType.INDEX:
+            return IndexResultsReader(self.path, self.cpu_mapper)
+        else:
+            raise AttributeError("Such TestType not exists.")
+
+    def getDataFrame(self, no_sd_outlier):
+        return self.result_reader.getDataframe(no_sd_outlier)
+
 
 
 if __name__=="__main__":
-    mysqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\mysql\07-08-2021\results"
-    mssqlPathBase = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\sql_server\27-07\results"
-    pathBase = mysqlPathBase
-    # path = r"D:\praca_inz_sample\1.txt"
-    # reader = ResultFileReader(path)
-    # dir = reader.readFile()
-    colNames = ["indexed_table", "was_indexed", "query_type", "real", "user", "sys"]
-    df = pd.DataFrame(columns=colNames)
-    
-    import os
-    selectBaseDirectory = os.path.join(pathBase, "selects")
+    log_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\log"
+    groupby_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\group_by_order"
+    joins_path  = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\joins"
+    create_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\create"
+    insert_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\insert"
+    import_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\import"
+    index_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\index"
 
-    for indexedTable in os.listdir(selectBaseDirectory):
-        print(indexedTable)
-        for isIndexed in os.listdir(os.path.join(selectBaseDirectory, indexedTable)):
-            subdirectory = os.path.join(selectBaseDirectory, indexedTable, isIndexed)
-            for queryType in os.listdir(subdirectory):
-                print("--{}".format(queryType))
+    cpu_cores_mapper = CPUCoresMapper({"results_1cpus": 1,
+                                       "results_2cpus": 2,
+                                       "results_4cpus": 4})
+    indexing_mapper = IndexingMapper({"before_index": False,
+                                      "after_index": True})
 
-                realResultEntry = ResultEntry(ResultType.real)
-                userResultEntry = ResultEntry(ResultType.user)
-                sysResultEntry = ResultEntry(ResultType.sys)
-
-                for file in os.listdir(os.path.join(subdirectory, queryType)):
-                    resultDict = ResultFileReader(os.path.join(subdirectory,queryType,file)).readFile()
-                    realResultEntry.addValue(resultDict[realResultEntry.resultType])
-                    userResultEntry.addValue(resultDict[userResultEntry.resultType])
-                    sysResultEntry.addValue(resultDict[sysResultEntry.resultType])
-                
-                filteredRealArr = realResultEntry.removeOutliers(1)
-                filteredUserArr = userResultEntry.removeOutliers(1)
-                filteredSysArr = sysResultEntry.removeOutliers(1)
-
-                resultList = {colNames[0]: indexedTable, 
-                              colNames[1]: isIndexed,
-                              colNames[2]: queryType,
-                              colNames[3]: np.average(filteredRealArr),
-                              colNames[4]: np.average(filteredUserArr),
-                              colNames[5]: np.average(filteredSysArr)}
-                df = df.append(resultList, ignore_index=True)
-    print(df)
-    path = os.path.join(pathBase, "summarized.xlsx")
-    df.to_excel(path)      
-    pass
+    results_dict = { "log_select": ResultsReader(TestType.SELECT, log_path, cpu_cores_mapper, indexing_mapper, test_name="log"),
+                    "group_by_select": ResultsReader(TestType.SELECT, groupby_path, cpu_cores_mapper, indexing_mapper, test_name="group_by_order"),
+                    "joins_select": ResultsReader(TestType.SELECT, joins_path, cpu_cores_mapper, indexing_mapper, test_name="joins"),
+                    "create": ResultsReader(TestType.CREATE, create_path, cpu_cores_mapper, indexing_mapper),
+                    "insert": ResultsReader(TestType.INSERT, insert_path, cpu_cores_mapper, indexing_mapper),
+                    "import_": ResultsReader(TestType.IMPORT, import_path, cpu_cores_mapper, indexing_mapper),
+                    "index": ResultsReader(TestType.INDEX, index_path, cpu_cores_mapper, indexing_mapper)
+    }
+    for result_entry in results_dict.values():
+        print(result_entry.getDataFrame(2))
