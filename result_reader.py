@@ -5,6 +5,12 @@ import numpy as np
 from pandas.io.sql import read_sql_query
 
 
+"""
+#TODO: 
+    1. Add appropriate result size (currenlty almost everywhere is set to 0)
+    2. Add query name for each result type
+"""
+
 class ResultType(Enum):
     real = 1
     user = 2 
@@ -423,6 +429,41 @@ class ResultsReader:
         return self.result_reader.getDataframe(no_sd_outlier)
 
 
+class DatabaseResultsReader:
+    def __init__(self,
+                 path: str, 
+                 db: str,
+                 engine: str,
+                 cpu_cores_mappper: CPUCoresMapper,
+                 indexing_mapper: IndexingMapper):
+        self.path = path
+        self.db = db
+        self.engine = engine
+        self.cpu_mapper = cpu_cores_mappper
+        self.indexing_mapper = indexing_mapper
+    
+    def getDataFrame(self, no_sd_outlier):
+        df = pd.DataFrame()
+        tests_name_type_dict = {"log": TestType.SELECT,
+                                "group_by_order": TestType.SELECT,
+                                "joins": TestType.SELECT,
+                                "create": TestType.CREATE,
+                                "insert": TestType.INSERT,
+                                "import": TestType.IMPORT,
+                                "index": TestType.INDEX}
+        for test_name in os.listdir(self.path):
+            test_path = os.path.join(self.path, test_name)
+            test_type = tests_name_type_dict.get(test_name)
+            if not test_type:
+                raise Exception(f"Wrong test name {test_name}")
+            if test_type == TestType.SELECT:
+                df = df.append(ResultsReader(test_type, test_path, self.cpu_mapper, self.indexing_mapper, test_name = test_name).getDataFrame(no_sd_outlier), ignore_index=True)
+            else:
+                df = df.append(ResultsReader(test_type, test_path, self.cpu_mapper, self.indexing_mapper).getDataFrame(no_sd_outlier), ignore_index=True)
+        
+        df.insert(0, "database", self.db)
+        df.insert(1, "engine", self.engine)
+        return df
 
 if __name__=="__main__":
     log_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\log"
@@ -432,6 +473,8 @@ if __name__=="__main__":
     insert_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\insert"
     import_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\import"
     index_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb\index"
+    
+    path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb"
 
     cpu_cores_mapper = CPUCoresMapper({"results_1cpus": 1,
                                        "results_2cpus": 2,
@@ -447,5 +490,9 @@ if __name__=="__main__":
                     "import_": ResultsReader(TestType.IMPORT, import_path, cpu_cores_mapper, indexing_mapper),
                     "index": ResultsReader(TestType.INDEX, index_path, cpu_cores_mapper, indexing_mapper)
     }
-    for result_entry in results_dict.values():
-        print(result_entry.getDataFrame(2))
+
+    db_results_reader = DatabaseResultsReader(path, "MySQL", "InnoDB", cpu_cores_mapper, indexing_mapper)
+    df = db_results_reader.getDataFrame(2)
+    df.to_csv(r"C:\Users\szymon\AppData\Local\Temp\results.csv")
+    # for result_entry in results_dict.values():
+    #     print(result_entry.getDataFrame(2))
