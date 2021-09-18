@@ -7,7 +7,7 @@ for script in $selects_path/*.sql
 do
 script_name=$(basename $script .sql)
 was_indexed=$1
-indexed_table="clients"
+indexed_table=$script_name
 results_path="/results/select/$indexed_table/$was_indexed/$script_name"
 mkdir -p $results_path
     for i in $(seq 0 $count)
