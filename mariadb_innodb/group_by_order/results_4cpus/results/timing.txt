@@ -1,0 +1,1248 @@
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	945
+James	Johnson	733
+James	Williams	646
+James	Brown	579
+James	Jones	577
+James	Davis	487
+John	Smith	439
+Robert	Smith	434
+John	Johnson	406
+Group by iteration: 1
+clients_1000000_all before_index 1
+
+real	0m9.520s
+user	0m0.076s
+sys	0m0.014s
+Group by iteration: 2
+clients_1000000_all before_index 2
+
+real	0m9.401s
+user	0m0.085s
+sys	0m0.015s
+Group by iteration: 3
+clients_1000000_all before_index 3
+
+real	0m9.418s
+user	0m0.083s
+sys	0m0.009s
+Group by iteration: 4
+clients_1000000_all before_index 4
+
+real	0m9.369s
+user	0m0.072s
+sys	0m0.017s
+Group by iteration: 5
+clients_1000000_all before_index 5
+
+real	0m9.316s
+user	0m0.087s
+sys	0m0.013s
+Group by iteration: 6
+clients_1000000_all before_index 6
+
+real	0m9.394s
+user	0m0.086s
+sys	0m0.004s
+Group by iteration: 7
+clients_1000000_all before_index 7
+
+real	0m9.383s
+user	0m0.083s
+sys	0m0.005s
+Group by iteration: 8
+clients_1000000_all before_index 8
+
+real	0m9.374s
+user	0m0.086s
+sys	0m0.009s
+Group by iteration: 9
+clients_1000000_all before_index 9
+
+real	0m9.324s
+user	0m0.078s
+sys	0m0.010s
+Group by iteration: 10
+clients_1000000_all before_index 10
+
+real	0m9.358s
+user	0m0.085s
+sys	0m0.009s
+Group by iteration: 11
+clients_1000000_all before_index 11
+
+real	0m9.351s
+user	0m0.076s
+sys	0m0.016s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	81
+James	Williams	69
+James	Brown	68
+James	Johnson	60
+James	Jones	56
+James	Davis	50
+Robert	Smith	43
+Michael	Smith	41
+Mary	Smith	40
+Group by iteration: 1
+clients_100000_all before_index 1
+
+real	0m0.098s
+user	0m0.016s
+sys	0m0.006s
+Group by iteration: 2
+clients_100000_all before_index 2
+
+real	0m0.103s
+user	0m0.026s
+sys	0m0.000s
+Group by iteration: 3
+clients_100000_all before_index 3
+
+real	0m0.099s
+user	0m0.018s
+sys	0m0.005s
+Group by iteration: 4
+clients_100000_all before_index 4
+
+real	0m0.097s
+user	0m0.014s
+sys	0m0.009s
+Group by iteration: 5
+clients_100000_all before_index 5
+
+real	0m0.098s
+user	0m0.019s
+sys	0m0.005s
+Group by iteration: 6
+clients_100000_all before_index 6
+
+real	0m0.101s
+user	0m0.020s
+sys	0m0.004s
+Group by iteration: 7
+clients_100000_all before_index 7
+
+real	0m0.099s
+user	0m0.016s
+sys	0m0.008s
+Group by iteration: 8
+clients_100000_all before_index 8
+
+real	0m0.097s
+user	0m0.021s
+sys	0m0.003s
+Group by iteration: 9
+clients_100000_all before_index 9
+
+real	0m0.099s
+user	0m0.014s
+sys	0m0.009s
+Group by iteration: 10
+clients_100000_all before_index 10
+
+real	0m0.098s
+user	0m0.015s
+sys	0m0.007s
+Group by iteration: 11
+clients_100000_all before_index 11
+
+real	0m0.102s
+user	0m0.016s
+sys	0m0.008s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Brown	11
+James	Williams	9
+James	Johnson	8
+Robert	Williams	6
+John	Smith	5
+Joseph	Brown	5
+David	Johnson	5
+John	Williams	5
+John	Johnson	5
+Group by iteration: 1
+clients_10000_all before_index 1
+
+real	0m0.014s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 2
+clients_10000_all before_index 2
+
+real	0m0.014s
+user	0m0.007s
+sys	0m0.001s
+Group by iteration: 3
+clients_10000_all before_index 3
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.003s
+Group by iteration: 4
+clients_10000_all before_index 4
+
+real	0m0.015s
+user	0m0.003s
+sys	0m0.006s
+Group by iteration: 5
+clients_10000_all before_index 5
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.003s
+Group by iteration: 6
+clients_10000_all before_index 6
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.004s
+Group by iteration: 7
+clients_10000_all before_index 7
+
+real	0m0.013s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 8
+clients_10000_all before_index 8
+
+real	0m0.015s
+user	0m0.004s
+sys	0m0.004s
+Group by iteration: 9
+clients_10000_all before_index 9
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.007s
+Group by iteration: 10
+clients_10000_all before_index 10
+
+real	0m0.015s
+user	0m0.008s
+sys	0m0.000s
+Group by iteration: 11
+clients_10000_all before_index 11
+
+real	0m0.013s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Williams	3
+Louis	Roberts	2
+James	Wilson	2
+Josephine	Brown	2
+Jeffrey	Miller	2
+John	Watson	2
+Roy	Walker	2
+James	Garcia	2
+James	Simmons	2
+Group by iteration: 1
+clients_1000_all before_index 1
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 2
+clients_1000_all before_index 2
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Group by iteration: 3
+clients_1000_all before_index 3
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 4
+clients_1000_all before_index 4
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 5
+clients_1000_all before_index 5
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 6
+clients_1000_all before_index 6
+
+real	0m0.008s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 7
+clients_1000_all before_index 7
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 8
+clients_1000_all before_index 8
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 9
+clients_1000_all before_index 9
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.002s
+Group by iteration: 10
+clients_1000_all before_index 10
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 11
+clients_1000_all before_index 11
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Debbie	Lane	1
+Crystal	Hopkins	1
+Lena	Stevens	1
+Amanda	Carter	1
+David	Miller	1
+Patricia	Webb	1
+Herbert	Tyler	1
+Misty	Aguilar	1
+Robert	Williams	1
+Group by iteration: 1
+clients_100_all before_index 1
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 2
+clients_100_all before_index 2
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Group by iteration: 3
+clients_100_all before_index 3
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 4
+clients_100_all before_index 4
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 5
+clients_100_all before_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 6
+clients_100_all before_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 7
+clients_100_all before_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 8
+clients_100_all before_index 8
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 9
+clients_100_all before_index 9
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 10
+clients_100_all before_index 10
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 11
+clients_100_all before_index 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Amanda	Carter	1
+Jean	Gray	1
+Richard	Reid	1
+Gary	Garner	1
+Ida	Williams	1
+Jon	Brown	1
+Elizabeth	Bruce	1
+William	Fox	1
+Josephine	Davis	1
+Group by iteration: 1
+clients_10_all before_index 1
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.002s
+Group by iteration: 2
+clients_10_all before_index 2
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 3
+clients_10_all before_index 3
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 4
+clients_10_all before_index 4
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 5
+clients_10_all before_index 5
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 6
+clients_10_all before_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 7
+clients_10_all before_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 8
+clients_10_all before_index 8
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 9
+clients_10_all before_index 9
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 10
+clients_10_all before_index 10
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 11
+clients_10_all before_index 11
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Amanda	Carter	1
+Group by iteration: 1
+clients_1_all before_index 1
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 2
+clients_1_all before_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 3
+clients_1_all before_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 4
+clients_1_all before_index 4
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 5
+clients_1_all before_index 5
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.001s
+Group by iteration: 6
+clients_1_all before_index 6
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 7
+clients_1_all before_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 8
+clients_1_all before_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 9
+clients_1_all before_index 9
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 10
+clients_1_all before_index 10
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 11
+clients_1_all before_index 11
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	9359
+James	Johnson	7457
+James	Williams	6507
+James	Brown	5812
+James	Jones	5749
+John	Smith	4736
+James	Davis	4545
+Robert	Smith	4455
+James	Miller	3904
+Group by iteration: 1
+clients_base_all before_index 1
+
+real	1m53.209s
+user	0m0.176s
+sys	0m0.043s
+Group by iteration: 2
+clients_base_all before_index 2
+
+real	1m53.290s
+user	0m0.183s
+sys	0m0.035s
+Group by iteration: 3
+clients_base_all before_index 3
+
+real	1m54.010s
+user	0m0.182s
+sys	0m0.045s
+Group by iteration: 4
+clients_base_all before_index 4
+
+real	1m53.534s
+user	0m0.197s
+sys	0m0.023s
+Group by iteration: 5
+clients_base_all before_index 5
+
+real	1m53.604s
+user	0m0.184s
+sys	0m0.038s
+Group by iteration: 6
+clients_base_all before_index 6
+
+real	1m53.932s
+user	0m0.187s
+sys	0m0.032s
+Group by iteration: 7
+clients_base_all before_index 7
+
+real	1m53.540s
+user	0m0.186s
+sys	0m0.042s
+Group by iteration: 8
+clients_base_all before_index 8
+
+real	1m53.582s
+user	0m0.197s
+sys	0m0.025s
+Group by iteration: 9
+clients_base_all before_index 9
+
+real	1m53.597s
+user	0m0.182s
+sys	0m0.036s
+Group by iteration: 10
+clients_base_all before_index 10
+
+real	1m53.569s
+user	0m0.194s
+sys	0m0.032s
+Group by iteration: 11
+clients_base_all before_index 11
+
+real	1m53.543s
+user	0m0.209s
+sys	0m0.014s
+
+real	0m15.981s
+user	0m0.003s
+sys	0m0.003s
+
+real	0m0.023s
+user	0m0.006s
+sys	0m0.000s
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.014s
+user	0m0.000s
+sys	0m0.005s
+
+real	0m0.018s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.019s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.120s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m1.323s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	945
+James	Johnson	733
+James	Williams	646
+James	Brown	579
+James	Jones	577
+James	Davis	487
+John	Smith	439
+Robert	Smith	434
+John	Johnson	406
+Group by iteration: 1
+clients_1000000_all after_index 1
+
+real	0m0.496s
+user	0m0.075s
+sys	0m0.026s
+Group by iteration: 2
+clients_1000000_all after_index 2
+
+real	0m0.492s
+user	0m0.075s
+sys	0m0.018s
+Group by iteration: 3
+clients_1000000_all after_index 3
+
+real	0m0.492s
+user	0m0.074s
+sys	0m0.018s
+Group by iteration: 4
+clients_1000000_all after_index 4
+
+real	0m0.479s
+user	0m0.077s
+sys	0m0.013s
+Group by iteration: 5
+clients_1000000_all after_index 5
+
+real	0m0.498s
+user	0m0.085s
+sys	0m0.013s
+Group by iteration: 6
+clients_1000000_all after_index 6
+
+real	0m0.479s
+user	0m0.063s
+sys	0m0.026s
+Group by iteration: 7
+clients_1000000_all after_index 7
+
+real	0m0.492s
+user	0m0.075s
+sys	0m0.015s
+Group by iteration: 8
+clients_1000000_all after_index 8
+
+real	0m0.493s
+user	0m0.072s
+sys	0m0.016s
+Group by iteration: 9
+clients_1000000_all after_index 9
+
+real	0m0.488s
+user	0m0.070s
+sys	0m0.019s
+Group by iteration: 10
+clients_1000000_all after_index 10
+
+real	0m0.488s
+user	0m0.058s
+sys	0m0.033s
+Group by iteration: 11
+clients_1000000_all after_index 11
+
+real	0m0.493s
+user	0m0.080s
+sys	0m0.009s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	81
+James	Williams	69
+James	Brown	68
+James	Johnson	60
+James	Jones	56
+James	Davis	50
+Robert	Smith	43
+Michael	Smith	41
+Mary	Smith	40
+Group by iteration: 1
+clients_100000_all after_index 1
+
+real	0m0.072s
+user	0m0.014s
+sys	0m0.009s
+Group by iteration: 2
+clients_100000_all after_index 2
+
+real	0m0.071s
+user	0m0.015s
+sys	0m0.010s
+Group by iteration: 3
+clients_100000_all after_index 3
+
+real	0m0.070s
+user	0m0.018s
+sys	0m0.006s
+Group by iteration: 4
+clients_100000_all after_index 4
+
+real	0m0.072s
+user	0m0.018s
+sys	0m0.006s
+Group by iteration: 5
+clients_100000_all after_index 5
+
+real	0m0.072s
+user	0m0.021s
+sys	0m0.005s
+Group by iteration: 6
+clients_100000_all after_index 6
+
+real	0m0.071s
+user	0m0.017s
+sys	0m0.007s
+Group by iteration: 7
+clients_100000_all after_index 7
+
+real	0m0.069s
+user	0m0.020s
+sys	0m0.004s
+Group by iteration: 8
+clients_100000_all after_index 8
+
+real	0m0.070s
+user	0m0.015s
+sys	0m0.010s
+Group by iteration: 9
+clients_100000_all after_index 9
+
+real	0m0.073s
+user	0m0.017s
+sys	0m0.006s
+Group by iteration: 10
+clients_100000_all after_index 10
+
+real	0m0.069s
+user	0m0.013s
+sys	0m0.009s
+Group by iteration: 11
+clients_100000_all after_index 11
+
+real	0m0.070s
+user	0m0.012s
+sys	0m0.011s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Brown	11
+James	Williams	9
+James	Johnson	8
+Robert	Williams	6
+James	Rodriguez	5
+John	Smith	5
+John	Williams	5
+Joseph	Brown	5
+John	Johnson	5
+Group by iteration: 1
+clients_10000_all after_index 1
+
+real	0m0.011s
+user	0m0.000s
+sys	0m0.007s
+Group by iteration: 2
+clients_10000_all after_index 2
+
+real	0m0.012s
+user	0m0.000s
+sys	0m0.007s
+Group by iteration: 3
+clients_10000_all after_index 3
+
+real	0m0.011s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 4
+clients_10000_all after_index 4
+
+real	0m0.011s
+user	0m0.004s
+sys	0m0.003s
+Group by iteration: 5
+clients_10000_all after_index 5
+
+real	0m0.012s
+user	0m0.008s
+sys	0m0.000s
+Group by iteration: 6
+clients_10000_all after_index 6
+
+real	0m0.012s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 7
+clients_10000_all after_index 7
+
+real	0m0.012s
+user	0m0.008s
+sys	0m0.000s
+Group by iteration: 8
+clients_10000_all after_index 8
+
+real	0m0.011s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 9
+clients_10000_all after_index 9
+
+real	0m0.012s
+user	0m0.004s
+sys	0m0.004s
+Group by iteration: 10
+clients_10000_all after_index 10
+
+real	0m0.012s
+user	0m0.000s
+sys	0m0.007s
+Group by iteration: 11
+clients_10000_all after_index 11
+
+real	0m0.012s
+user	0m0.007s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Williams	3
+Jeffrey	Miller	2
+Roy	Walker	2
+Louis	Roberts	2
+John	Watson	2
+James	Garcia	2
+Susan	Miller	2
+James	Simmons	2
+Josephine	Brown	2
+Group by iteration: 1
+clients_1000_all after_index 1
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 2
+clients_1000_all after_index 2
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 3
+clients_1000_all after_index 3
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 4
+clients_1000_all after_index 4
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 5
+clients_1000_all after_index 5
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.006s
+Group by iteration: 6
+clients_1000_all after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 7
+clients_1000_all after_index 7
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 8
+clients_1000_all after_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 9
+clients_1000_all after_index 9
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.006s
+Group by iteration: 10
+clients_1000_all after_index 10
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 11
+clients_1000_all after_index 11
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.006s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Ashley	Martin	1
+Douglas	Justice	1
+James	Ball	1
+Kristine	George	1
+Mildred	Smith	1
+Sherry	Neal	1
+Chester	Moon	1
+Freda	Erickson	1
+Jennifer	Bennett	1
+Group by iteration: 1
+clients_100_all after_index 1
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 2
+clients_100_all after_index 2
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 3
+clients_100_all after_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 4
+clients_100_all after_index 4
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 5
+clients_100_all after_index 5
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 6
+clients_100_all after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 7
+clients_100_all after_index 7
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 8
+clients_100_all after_index 8
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 9
+clients_100_all after_index 9
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 10
+clients_100_all after_index 10
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 11
+clients_100_all after_index 11
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Ida	Williams	1
+Elizabeth	Bruce	1
+William	Fox	1
+Amanda	Carter	1
+Josephine	Davis	1
+Jean	Gray	1
+Gary	Garner	1
+Douglas	Justice	1
+Richard	Reid	1
+Group by iteration: 1
+clients_10_all after_index 1
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 2
+clients_10_all after_index 2
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Group by iteration: 3
+clients_10_all after_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 4
+clients_10_all after_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 5
+clients_10_all after_index 5
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 6
+clients_10_all after_index 6
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Group by iteration: 7
+clients_10_all after_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 8
+clients_10_all after_index 8
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 9
+clients_10_all after_index 9
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 10
+clients_10_all after_index 10
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 11
+clients_10_all after_index 11
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 0
+first_name	last_name	ppl_count
+Amanda	Carter	1
+Group by iteration: 1
+clients_1_all after_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 2
+clients_1_all after_index 2
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Group by iteration: 3
+clients_1_all after_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 4
+clients_1_all after_index 4
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 5
+clients_1_all after_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 6
+clients_1_all after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Group by iteration: 7
+clients_1_all after_index 7
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+Group by iteration: 8
+clients_1_all after_index 8
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 9
+clients_1_all after_index 9
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Group by iteration: 10
+clients_1_all after_index 10
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Group by iteration: 11
+clients_1_all after_index 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Group by iteration: 0
+first_name	last_name	ppl_count
+James	Smith	9359
+James	Johnson	7457
+James	Williams	6507
+James	Brown	5812
+James	Jones	5749
+John	Smith	4736
+James	Davis	4545
+Robert	Smith	4455
+James	Miller	3904
+Group by iteration: 1
+clients_base_all after_index 1
+
+real	0m2.637s
+user	0m0.188s
+sys	0m0.032s
+Group by iteration: 2
+clients_base_all after_index 2
+
+real	0m2.616s
+user	0m0.168s
+sys	0m0.051s
+Group by iteration: 3
+clients_base_all after_index 3
+
+real	0m2.584s
+user	0m0.192s
+sys	0m0.030s
+Group by iteration: 4
+clients_base_all after_index 4
+
+real	0m2.630s
+user	0m0.192s
+sys	0m0.035s
+Group by iteration: 5
+clients_base_all after_index 5
+
+real	0m2.582s
+user	0m0.198s
+sys	0m0.020s
+Group by iteration: 6
+clients_base_all after_index 6
+
+real	0m2.632s
+user	0m0.193s
+sys	0m0.032s
+Group by iteration: 7
+clients_base_all after_index 7
+
+real	0m2.650s
+user	0m0.191s
+sys	0m0.055s
+Group by iteration: 8
+clients_base_all after_index 8
+
+real	0m2.621s
+user	0m0.171s
+sys	0m0.046s
+Group by iteration: 9
+clients_base_all after_index 9
+
+real	0m2.635s
+user	0m0.175s
+sys	0m0.046s
+Group by iteration: 10
+clients_base_all after_index 10
+
+real	0m2.646s
+user	0m0.207s
+sys	0m0.038s
+Group by iteration: 11
+clients_base_all after_index 11
+
+real	0m2.641s
+user	0m0.230s
+sys	0m0.015s

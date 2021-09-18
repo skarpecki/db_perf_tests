@@ -1,0 +1,204 @@
+Insert iteration no 0
+
+real	0m0.021s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.297s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.236s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m16.350s
+user	0m8.148s
+sys	0m4.955s
+Insert iteration no 1
+
+real	0m0.015s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.295s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.193s
+user	0m0.003s
+sys	0m0.002s
+
+real	0m16.209s
+user	0m7.845s
+sys	0m5.163s
+Insert iteration no 2
+
+real	0m0.041s
+user	0m0.003s
+sys	0m0.003s
+
+real	0m0.324s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.194s
+user	0m0.002s
+sys	0m0.002s
+
+real	0m16.326s
+user	0m8.071s
+sys	0m5.067s
+Insert iteration no 3
+
+real	0m0.019s
+user	0m0.003s
+sys	0m0.003s
+
+real	0m0.287s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.192s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m16.333s
+user	0m8.098s
+sys	0m5.051s
+Insert iteration no 4
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.359s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.191s
+user	0m0.003s
+sys	0m0.002s
+
+real	0m16.279s
+user	0m7.987s
+sys	0m5.108s
+Insert iteration no 5
+
+real	0m0.016s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.325s
+user	0m0.000s
+sys	0m0.005s
+
+real	0m0.188s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m16.339s
+user	0m7.943s
+sys	0m5.139s
+Insert iteration no 6
+
+real	0m0.021s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.347s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.165s
+user	0m0.003s
+sys	0m0.002s
+
+real	0m16.337s
+user	0m7.880s
+sys	0m5.273s
+Insert iteration no 7
+
+real	0m0.020s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.341s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.195s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m16.207s
+user	0m7.905s
+sys	0m5.133s
+Insert iteration no 8
+
+real	0m0.025s
+user	0m0.000s
+sys	0m0.006s
+
+real	0m0.279s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.188s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m16.225s
+user	0m8.026s
+sys	0m5.012s
+Insert iteration no 9
+
+real	0m0.022s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.284s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.191s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m16.207s
+user	0m7.969s
+sys	0m5.058s
+Insert iteration no 10
+
+real	0m0.022s
+user	0m0.002s
+sys	0m0.004s
+
+real	0m0.370s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.210s
+user	0m0.000s
+sys	0m0.005s
+
+real	0m16.286s
+user	0m8.099s
+sys	0m4.945s
+Insert iteration no 11
+
+real	0m0.020s
+user	0m0.000s
+sys	0m0.005s
+
+real	0m0.335s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.191s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m16.187s
+user	0m7.920s
+sys	0m5.077s

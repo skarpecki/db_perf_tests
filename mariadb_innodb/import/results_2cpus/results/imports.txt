@@ -1,0 +1,448 @@
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 0
+Inports iteration: 1
+
+real	0m22.077s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 1
+
+real	0m0.006s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 1
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 1
+
+real	0m0.008s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 1
+
+real	0m0.144s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 1
+
+real	0m0.287s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 1
+
+real	0m0.721s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 1
+
+real	0m5.819s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 2
+
+real	0m36.104s
+user	0m0.006s
+sys	0m0.000s
+Inports iteration: 2
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 2
+
+real	0m0.006s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 2
+
+real	0m0.006s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 2
+
+real	0m0.016s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 2
+
+real	0m0.123s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 2
+
+real	0m0.315s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 2
+
+real	0m2.112s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 3
+
+real	0m21.616s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 3
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 3
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 3
+
+real	0m0.009s
+user	0m0.006s
+sys	0m0.000s
+Inports iteration: 3
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 3
+
+real	0m0.134s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 3
+
+real	0m0.287s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 3
+
+real	0m2.151s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 4
+
+real	0m22.078s
+user	0m0.003s
+sys	0m0.003s
+Inports iteration: 4
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 4
+
+real	0m0.006s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 4
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 4
+
+real	0m0.020s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 4
+
+real	0m0.134s
+user	0m0.003s
+sys	0m0.002s
+Inports iteration: 4
+
+real	0m0.320s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 4
+
+real	0m2.142s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 5
+
+real	0m45.326s
+user	0m0.003s
+sys	0m0.003s
+Inports iteration: 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 5
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 5
+
+real	0m0.008s
+user	0m0.003s
+sys	0m0.002s
+Inports iteration: 5
+
+real	0m0.016s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 5
+
+real	0m0.152s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 5
+
+real	0m0.426s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 5
+
+real	0m2.100s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 6
+
+real	0m21.243s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 6
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 6
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 6
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 6
+
+real	0m0.016s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 6
+
+real	0m0.167s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 6
+
+real	0m0.310s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 6
+
+real	0m2.112s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 7
+
+real	0m21.425s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 7
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 7
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 7
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 7
+
+real	0m0.020s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 7
+
+real	0m0.110s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 7
+
+real	0m0.302s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 7
+
+real	0m2.151s
+user	0m0.002s
+sys	0m0.002s
+Inports iteration: 8
+
+real	0m22.510s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 8
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 8
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 8
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 8
+
+real	0m0.015s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 8
+
+real	0m0.107s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 8
+
+real	0m0.338s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 8
+
+real	0m2.163s
+user	0m0.003s
+sys	0m0.003s
+Inports iteration: 9
+
+real	0m21.553s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 9
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.003s
+Inports iteration: 9
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 9
+
+real	0m0.007s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 9
+
+real	0m0.017s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 9
+
+real	0m0.117s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 9
+
+real	0m0.294s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 9
+
+real	0m2.076s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 10
+
+real	0m21.609s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 10
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 10
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 10
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 10
+
+real	0m0.013s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 10
+
+real	0m0.118s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 10
+
+real	0m0.290s
+user	0m0.000s
+sys	0m0.005s
+Inports iteration: 10
+
+real	0m2.234s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 11
+
+real	0m22.305s
+user	0m0.005s
+sys	0m0.000s
+Inports iteration: 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 11
+
+real	0m0.006s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Inports iteration: 11
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.000s
+Inports iteration: 11
+
+real	0m0.121s
+user	0m0.003s
+sys	0m0.003s
+Inports iteration: 11
+
+real	0m0.314s
+user	0m0.000s
+sys	0m0.006s
+Inports iteration: 11
+
+real	0m2.070s
+user	0m0.000s
+sys	0m0.005s

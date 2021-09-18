@@ -1,0 +1,2348 @@
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_1000000_all before_index 1
+
+real	0m2.094s
+user	0m0.537s
+sys	0m0.101s
+Log select iteration 2
+clients_1000000_all before_index 2
+
+real	0m2.098s
+user	0m0.573s
+sys	0m0.074s
+Log select iteration 3
+clients_1000000_all before_index 3
+
+real	0m2.028s
+user	0m0.531s
+sys	0m0.107s
+Log select iteration 4
+clients_1000000_all before_index 4
+
+real	0m2.226s
+user	0m0.607s
+sys	0m0.111s
+Log select iteration 5
+clients_1000000_all before_index 5
+
+real	0m2.009s
+user	0m0.538s
+sys	0m0.101s
+Log select iteration 6
+clients_1000000_all before_index 6
+
+real	0m2.074s
+user	0m0.524s
+sys	0m0.108s
+Log select iteration 7
+clients_1000000_all before_index 7
+
+real	0m1.557s
+user	0m0.539s
+sys	0m0.083s
+Log select iteration 8
+clients_1000000_all before_index 8
+
+real	0m1.507s
+user	0m0.516s
+sys	0m0.118s
+Log select iteration 9
+clients_1000000_all before_index 9
+
+real	0m1.447s
+user	0m0.537s
+sys	0m0.092s
+Log select iteration 10
+clients_1000000_all before_index 10
+
+real	0m1.501s
+user	0m0.580s
+sys	0m0.056s
+Log select iteration 11
+clients_1000000_all before_index 11
+
+real	0m1.483s
+user	0m0.554s
+sys	0m0.080s
+Log select iteration 0
+Log select iteration 1
+clients_1000000_where before_index 1
+
+real	0m0.310s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 2
+clients_1000000_where before_index 2
+
+real	0m0.304s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 3
+clients_1000000_where before_index 3
+
+real	0m0.316s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 4
+clients_1000000_where before_index 4
+
+real	0m0.315s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 5
+clients_1000000_where before_index 5
+
+real	0m0.315s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 6
+clients_1000000_where before_index 6
+
+real	0m0.340s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 7
+clients_1000000_where before_index 7
+
+real	0m0.324s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 8
+clients_1000000_where before_index 8
+
+real	0m0.352s
+user	0m0.007s
+sys	0m0.000s
+Log select iteration 9
+clients_1000000_where before_index 9
+
+real	0m0.294s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 10
+clients_1000000_where before_index 10
+
+real	0m0.298s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_1000000_where before_index 11
+
+real	0m0.327s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_100000_all before_index 1
+
+real	0m0.136s
+user	0m0.062s
+sys	0m0.013s
+Log select iteration 2
+clients_100000_all before_index 2
+
+real	0m0.129s
+user	0m0.055s
+sys	0m0.012s
+Log select iteration 3
+clients_100000_all before_index 3
+
+real	0m0.176s
+user	0m0.061s
+sys	0m0.009s
+Log select iteration 4
+clients_100000_all before_index 4
+
+real	0m0.133s
+user	0m0.063s
+sys	0m0.006s
+Log select iteration 5
+clients_100000_all before_index 5
+
+real	0m0.174s
+user	0m0.048s
+sys	0m0.021s
+Log select iteration 6
+clients_100000_all before_index 6
+
+real	0m0.129s
+user	0m0.056s
+sys	0m0.009s
+Log select iteration 7
+clients_100000_all before_index 7
+
+real	0m0.174s
+user	0m0.048s
+sys	0m0.020s
+Log select iteration 8
+clients_100000_all before_index 8
+
+real	0m0.167s
+user	0m0.045s
+sys	0m0.022s
+Log select iteration 9
+clients_100000_all before_index 9
+
+real	0m0.132s
+user	0m0.060s
+sys	0m0.005s
+Log select iteration 10
+clients_100000_all before_index 10
+
+real	0m0.168s
+user	0m0.070s
+sys	0m0.000s
+Log select iteration 11
+clients_100000_all before_index 11
+
+real	0m0.136s
+user	0m0.053s
+sys	0m0.013s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_100000_where before_index 1
+
+real	0m0.027s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_100000_where before_index 2
+
+real	0m0.027s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 3
+clients_100000_where before_index 3
+
+real	0m0.064s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 4
+clients_100000_where before_index 4
+
+real	0m0.029s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 5
+clients_100000_where before_index 5
+
+real	0m0.061s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 6
+clients_100000_where before_index 6
+
+real	0m0.027s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 7
+clients_100000_where before_index 7
+
+real	0m0.059s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_100000_where before_index 8
+
+real	0m0.027s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_100000_where before_index 9
+
+real	0m0.084s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 10
+clients_100000_where before_index 10
+
+real	0m0.028s
+user	0m0.005s
+sys	0m0.001s
+Log select iteration 11
+clients_100000_where before_index 11
+
+real	0m0.028s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_10000_all before_index 1
+
+real	0m0.013s
+user	0m0.010s
+sys	0m0.000s
+Log select iteration 2
+clients_10000_all before_index 2
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.005s
+Log select iteration 3
+clients_10000_all before_index 3
+
+real	0m0.014s
+user	0m0.011s
+sys	0m0.000s
+Log select iteration 4
+clients_10000_all before_index 4
+
+real	0m0.013s
+user	0m0.005s
+sys	0m0.005s
+Log select iteration 5
+clients_10000_all before_index 5
+
+real	0m0.054s
+user	0m0.009s
+sys	0m0.003s
+Log select iteration 6
+clients_10000_all before_index 6
+
+real	0m0.014s
+user	0m0.012s
+sys	0m0.001s
+Log select iteration 7
+clients_10000_all before_index 7
+
+real	0m0.014s
+user	0m0.007s
+sys	0m0.004s
+Log select iteration 8
+clients_10000_all before_index 8
+
+real	0m0.015s
+user	0m0.004s
+sys	0m0.008s
+Log select iteration 9
+clients_10000_all before_index 9
+
+real	0m0.048s
+user	0m0.008s
+sys	0m0.004s
+Log select iteration 10
+clients_10000_all before_index 10
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.006s
+Log select iteration 11
+clients_10000_all before_index 11
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.006s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_10000_where before_index 1
+
+real	0m0.009s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 2
+clients_10000_where before_index 2
+
+real	0m0.008s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 3
+clients_10000_where before_index 3
+
+real	0m0.008s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_10000_where before_index 4
+
+real	0m0.008s
+user	0m0.001s
+sys	0m0.005s
+Log select iteration 5
+clients_10000_where before_index 5
+
+real	0m0.009s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 6
+clients_10000_where before_index 6
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_10000_where before_index 7
+
+real	0m0.007s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 8
+clients_10000_where before_index 8
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 9
+clients_10000_where before_index 9
+
+real	0m0.035s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 10
+clients_10000_where before_index 10
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 11
+clients_10000_where before_index 11
+
+real	0m0.008s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_1000_all before_index 1
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_1000_all before_index 2
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 3
+clients_1000_all before_index 3
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 4
+clients_1000_all before_index 4
+
+real	0m0.031s
+user	0m0.002s
+sys	0m0.004s
+Log select iteration 5
+clients_1000_all before_index 5
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_1000_all before_index 6
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_1000_all before_index 7
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_1000_all before_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_1000_all before_index 9
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 10
+clients_1000_all before_index 10
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.007s
+Log select iteration 11
+clients_1000_all before_index 11
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1000_where before_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_1000_where before_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_1000_where before_index 3
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_1000_where before_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_1000_where before_index 5
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 6
+clients_1000_where before_index 6
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_1000_where before_index 7
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 8
+clients_1000_where before_index 8
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_1000_where before_index 9
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 10
+clients_1000_where before_index 10
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 11
+clients_1000_where before_index 11
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_100_all before_index 1
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 2
+clients_100_all before_index 2
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.004s
+Log select iteration 3
+clients_100_all before_index 3
+
+real	0m0.014s
+user	0m0.002s
+sys	0m0.002s
+Log select iteration 4
+clients_100_all before_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_100_all before_index 5
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_100_all before_index 6
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_100_all before_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 8
+clients_100_all before_index 8
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 9
+clients_100_all before_index 9
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 10
+clients_100_all before_index 10
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 11
+clients_100_all before_index 11
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.001s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_100_where before_index 1
+
+real	0m0.009s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_100_where before_index 2
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_100_where before_index 3
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 4
+clients_100_where before_index 4
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 5
+clients_100_where before_index 5
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_100_where before_index 6
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_100_where before_index 7
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 8
+clients_100_where before_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_100_where before_index 9
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 10
+clients_100_where before_index 10
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 11
+clients_100_where before_index 11
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_10_all before_index 1
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 2
+clients_10_all before_index 2
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_10_all before_index 3
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_10_all before_index 4
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 5
+clients_10_all before_index 5
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 6
+clients_10_all before_index 6
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_10_all before_index 7
+
+real	0m0.067s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 8
+clients_10_all before_index 8
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 9
+clients_10_all before_index 9
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_10_all before_index 10
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 11
+clients_10_all before_index 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_10_where before_index 1
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 2
+clients_10_where before_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_10_where before_index 3
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 4
+clients_10_where before_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_10_where before_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_10_where before_index 6
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 7
+clients_10_where before_index 7
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 8
+clients_10_where before_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_10_where before_index 9
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_10_where before_index 10
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 11
+clients_10_where before_index 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1_all before_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_1_all before_index 2
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 3
+clients_1_all before_index 3
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.001s
+Log select iteration 4
+clients_1_all before_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_1_all before_index 5
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 6
+clients_1_all before_index 6
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 7
+clients_1_all before_index 7
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_1_all before_index 8
+
+real	0m0.058s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 9
+clients_1_all before_index 9
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_1_all before_index 10
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 11
+clients_1_all before_index 11
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1_where before_index 1
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 2
+clients_1_where before_index 2
+
+real	0m0.067s
+user	0m0.004s
+sys	0m0.003s
+Log select iteration 3
+clients_1_where before_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_1_where before_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 5
+clients_1_where before_index 5
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 6
+clients_1_where before_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_1_where before_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 8
+clients_1_where before_index 8
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 9
+clients_1_where before_index 9
+
+real	0m0.065s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 10
+clients_1_where before_index 10
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_1_where before_index 11
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_base_all before_index 1
+
+real	0m11.278s
+user	0m5.259s
+sys	0m0.767s
+Log select iteration 2
+clients_base_all before_index 2
+
+real	0m11.271s
+user	0m5.142s
+sys	0m0.910s
+Log select iteration 3
+clients_base_all before_index 3
+
+real	0m12.242s
+user	0m6.146s
+sys	0m0.881s
+Log select iteration 4
+clients_base_all before_index 4
+
+real	0m11.295s
+user	0m5.123s
+sys	0m0.960s
+Log select iteration 5
+clients_base_all before_index 5
+
+real	0m11.138s
+user	0m4.951s
+sys	0m0.958s
+Log select iteration 6
+clients_base_all before_index 6
+
+real	0m11.290s
+user	0m5.111s
+sys	0m0.977s
+Log select iteration 7
+clients_base_all before_index 7
+
+real	0m11.211s
+user	0m5.071s
+sys	0m0.903s
+Log select iteration 8
+clients_base_all before_index 8
+
+real	0m11.184s
+user	0m5.055s
+sys	0m0.927s
+Log select iteration 9
+clients_base_all before_index 9
+
+real	0m11.179s
+user	0m5.066s
+sys	0m0.912s
+Log select iteration 10
+clients_base_all before_index 10
+
+real	0m11.170s
+user	0m5.025s
+sys	0m0.932s
+Log select iteration 11
+clients_base_all before_index 11
+
+real	0m11.211s
+user	0m5.134s
+sys	0m0.867s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1691264	Carolina	Hurley	juan_cobb@fpk.org	435247	5	2124
+Log select iteration 1
+clients_base_where before_index 1
+
+real	0m2.498s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 2
+clients_base_where before_index 2
+
+real	0m2.500s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 3
+clients_base_where before_index 3
+
+real	0m2.506s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 4
+clients_base_where before_index 4
+
+real	0m2.497s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 5
+clients_base_where before_index 5
+
+real	0m2.509s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 6
+clients_base_where before_index 6
+
+real	0m2.510s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_base_where before_index 7
+
+real	0m2.498s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 8
+clients_base_where before_index 8
+
+real	0m2.500s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_base_where before_index 9
+
+real	0m2.502s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_base_where before_index 10
+
+real	0m2.501s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 11
+clients_base_where before_index 11
+
+real	0m2.500s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m16.593s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.014s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.013s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.019s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.019s
+user	0m0.000s
+sys	0m0.004s
+
+real	0m0.118s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m1.473s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_1000000_all after_index 1
+
+real	0m1.135s
+user	0m0.516s
+sys	0m0.088s
+Log select iteration 2
+clients_1000000_all after_index 2
+
+real	0m1.135s
+user	0m0.523s
+sys	0m0.085s
+Log select iteration 3
+clients_1000000_all after_index 3
+
+real	0m1.139s
+user	0m0.530s
+sys	0m0.080s
+Log select iteration 4
+clients_1000000_all after_index 4
+
+real	0m1.132s
+user	0m0.522s
+sys	0m0.082s
+Log select iteration 5
+clients_1000000_all after_index 5
+
+real	0m1.232s
+user	0m0.592s
+sys	0m0.112s
+Log select iteration 6
+clients_1000000_all after_index 6
+
+real	0m1.267s
+user	0m0.513s
+sys	0m0.129s
+Log select iteration 7
+clients_1000000_all after_index 7
+
+real	0m1.121s
+user	0m0.472s
+sys	0m0.125s
+Log select iteration 8
+clients_1000000_all after_index 8
+
+real	0m1.145s
+user	0m0.527s
+sys	0m0.089s
+Log select iteration 9
+clients_1000000_all after_index 9
+
+real	0m1.144s
+user	0m0.531s
+sys	0m0.089s
+Log select iteration 10
+clients_1000000_all after_index 10
+
+real	0m1.139s
+user	0m0.526s
+sys	0m0.085s
+Log select iteration 11
+clients_1000000_all after_index 11
+
+real	0m1.142s
+user	0m0.535s
+sys	0m0.079s
+Log select iteration 0
+Log select iteration 1
+clients_1000000_where after_index 1
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 2
+clients_1000000_where after_index 2
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 3
+clients_1000000_where after_index 3
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_1000000_where after_index 4
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Log select iteration 5
+clients_1000000_where after_index 5
+
+real	0m0.018s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 6
+clients_1000000_where after_index 6
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Log select iteration 7
+clients_1000000_where after_index 7
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 8
+clients_1000000_where after_index 8
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 9
+clients_1000000_where after_index 9
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.006s
+Log select iteration 10
+clients_1000000_where after_index 10
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 11
+clients_1000000_where after_index 11
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_100000_all after_index 1
+
+real	0m0.112s
+user	0m0.054s
+sys	0m0.010s
+Log select iteration 2
+clients_100000_all after_index 2
+
+real	0m0.147s
+user	0m0.065s
+sys	0m0.012s
+Log select iteration 3
+clients_100000_all after_index 3
+
+real	0m0.112s
+user	0m0.052s
+sys	0m0.011s
+Log select iteration 4
+clients_100000_all after_index 4
+
+real	0m0.108s
+user	0m0.056s
+sys	0m0.008s
+Log select iteration 5
+clients_100000_all after_index 5
+
+real	0m0.114s
+user	0m0.045s
+sys	0m0.020s
+Log select iteration 6
+clients_100000_all after_index 6
+
+real	0m0.107s
+user	0m0.052s
+sys	0m0.012s
+Log select iteration 7
+clients_100000_all after_index 7
+
+real	0m0.113s
+user	0m0.060s
+sys	0m0.005s
+Log select iteration 8
+clients_100000_all after_index 8
+
+real	0m0.137s
+user	0m0.063s
+sys	0m0.004s
+Log select iteration 9
+clients_100000_all after_index 9
+
+real	0m0.111s
+user	0m0.052s
+sys	0m0.011s
+Log select iteration 10
+clients_100000_all after_index 10
+
+real	0m0.118s
+user	0m0.063s
+sys	0m0.011s
+Log select iteration 11
+clients_100000_all after_index 11
+
+real	0m0.109s
+user	0m0.052s
+sys	0m0.013s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_100000_where after_index 1
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 2
+clients_100000_where after_index 2
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 3
+clients_100000_where after_index 3
+
+real	0m0.022s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 4
+clients_100000_where after_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_100000_where after_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_100000_where after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 7
+clients_100000_where after_index 7
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 8
+clients_100000_where after_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_100000_where after_index 9
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 10
+clients_100000_where after_index 10
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_100000_where after_index 11
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_10000_all after_index 1
+
+real	0m0.043s
+user	0m0.010s
+sys	0m0.003s
+Log select iteration 2
+clients_10000_all after_index 2
+
+real	0m0.015s
+user	0m0.012s
+sys	0m0.000s
+Log select iteration 3
+clients_10000_all after_index 3
+
+real	0m0.014s
+user	0m0.011s
+sys	0m0.000s
+Log select iteration 4
+clients_10000_all after_index 4
+
+real	0m0.014s
+user	0m0.011s
+sys	0m0.000s
+Log select iteration 5
+clients_10000_all after_index 5
+
+real	0m0.015s
+user	0m0.008s
+sys	0m0.004s
+Log select iteration 6
+clients_10000_all after_index 6
+
+real	0m0.036s
+user	0m0.008s
+sys	0m0.004s
+Log select iteration 7
+clients_10000_all after_index 7
+
+real	0m0.016s
+user	0m0.006s
+sys	0m0.006s
+Log select iteration 8
+clients_10000_all after_index 8
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.005s
+Log select iteration 9
+clients_10000_all after_index 9
+
+real	0m0.014s
+user	0m0.006s
+sys	0m0.006s
+Log select iteration 10
+clients_10000_all after_index 10
+
+real	0m0.015s
+user	0m0.012s
+sys	0m0.000s
+Log select iteration 11
+clients_10000_all after_index 11
+
+real	0m0.015s
+user	0m0.009s
+sys	0m0.004s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_10000_where after_index 1
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 2
+clients_10000_where after_index 2
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 3
+clients_10000_where after_index 3
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 4
+clients_10000_where after_index 4
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 5
+clients_10000_where after_index 5
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_10000_where after_index 6
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.003s
+Log select iteration 7
+clients_10000_where after_index 7
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 8
+clients_10000_where after_index 8
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_10000_where after_index 9
+
+real	0m0.031s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 10
+clients_10000_where after_index 10
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 11
+clients_10000_where after_index 11
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_1000_all after_index 1
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_1000_all after_index 2
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 3
+clients_1000_all after_index 3
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 4
+clients_1000_all after_index 4
+
+real	0m0.007s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 5
+clients_1000_all after_index 5
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 6
+clients_1000_all after_index 6
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+Log select iteration 7
+clients_1000_all after_index 7
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 8
+clients_1000_all after_index 8
+
+real	0m0.031s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 9
+clients_1000_all after_index 9
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 10
+clients_1000_all after_index 10
+
+real	0m0.008s
+user	0m0.008s
+sys	0m0.000s
+Log select iteration 11
+clients_1000_all after_index 11
+
+real	0m0.007s
+user	0m0.001s
+sys	0m0.006s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1000_where after_index 1
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 2
+clients_1000_where after_index 2
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 3
+clients_1000_where after_index 3
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 4
+clients_1000_where after_index 4
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 5
+clients_1000_where after_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_1000_where after_index 6
+
+real	0m0.005s
+user	0m0.002s
+sys	0m0.002s
+Log select iteration 7
+clients_1000_where after_index 7
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 8
+clients_1000_where after_index 8
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_1000_where after_index 9
+
+real	0m0.008s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 10
+clients_1000_where after_index 10
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_1000_where after_index 11
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_100_all after_index 1
+
+real	0m0.005s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 2
+clients_100_all after_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_100_all after_index 3
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 4
+clients_100_all after_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_100_all after_index 5
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 6
+clients_100_all after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_100_all after_index 7
+
+real	0m0.024s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 8
+clients_100_all after_index 8
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 9
+clients_100_all after_index 9
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 10
+clients_100_all after_index 10
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_100_all after_index 11
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_100_where after_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_100_where after_index 2
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_100_where after_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_100_where after_index 4
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 5
+clients_100_where after_index 5
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 6
+clients_100_where after_index 6
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_100_where after_index 7
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 8
+clients_100_where after_index 8
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 9
+clients_100_where after_index 9
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_100_where after_index 10
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_100_where after_index 11
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_10_all after_index 1
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 2
+clients_10_all after_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_10_all after_index 3
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 4
+clients_10_all after_index 4
+
+real	0m0.007s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 5
+clients_10_all after_index 5
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_10_all after_index 6
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 7
+clients_10_all after_index 7
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_10_all after_index 8
+
+real	0m0.026s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 9
+clients_10_all after_index 9
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 10
+clients_10_all after_index 10
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 11
+clients_10_all after_index 11
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_10_where after_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_10_where after_index 2
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 3
+clients_10_where after_index 3
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 4
+clients_10_where after_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 5
+clients_10_where after_index 5
+
+real	0m0.007s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 6
+clients_10_where after_index 6
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 7
+clients_10_where after_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 8
+clients_10_where after_index 8
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 9
+clients_10_where after_index 9
+
+real	0m0.026s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 10
+clients_10_where after_index 10
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 11
+clients_10_where after_index 11
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1_all after_index 1
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 2
+clients_1_all after_index 2
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 3
+clients_1_all after_index 3
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 4
+clients_1_all after_index 4
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 5
+clients_1_all after_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_1_all after_index 6
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 7
+clients_1_all after_index 7
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_1_all after_index 8
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 9
+clients_1_all after_index 9
+
+real	0m0.027s
+user	0m0.003s
+sys	0m0.002s
+Log select iteration 10
+clients_1_all after_index 10
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 11
+clients_1_all after_index 11
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+Log select iteration 1
+clients_1_where after_index 1
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_1_where after_index 2
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 3
+clients_1_where after_index 3
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 4
+clients_1_where after_index 4
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 5
+clients_1_where after_index 5
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_1_where after_index 6
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+Log select iteration 7
+clients_1_where after_index 7
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 8
+clients_1_where after_index 8
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.000s
+Log select iteration 9
+clients_1_where after_index 9
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 10
+clients_1_where after_index 10
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 11
+clients_1_where after_index 11
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1	Amanda	Carter	dale_tyler@hotmail.com	968154	2	8616
+2	Jon	Brown	jbryant@atsmogrsn.com	960652	8	2492
+3	Douglas	Justice	jturner@gmail.com	661655	7	6748
+4	Ida	Williams	dbaker@gul.com	187928	4	8116
+5	Josephine	Davis	mmason@gmx.net	914145	5	2244
+6	Gary	Garner	michael.dawson@objectbox.com	583538	7	6273
+7	William	Fox	kharmon@gii.com	503203	5	3894
+8	Richard	Reid	pauline.johnson@bdwomwe.at	764305	3	4815
+9	Elizabeth	Bruce	marianne.robinson@gmail.com	745306	6	5373
+Log select iteration 1
+clients_base_all after_index 1
+
+real	0m11.158s
+user	0m5.099s
+sys	0m0.904s
+Log select iteration 2
+clients_base_all after_index 2
+
+real	0m11.073s
+user	0m5.015s
+sys	0m0.915s
+Log select iteration 3
+clients_base_all after_index 3
+
+real	0m11.037s
+user	0m5.006s
+sys	0m0.884s
+Log select iteration 4
+clients_base_all after_index 4
+
+real	0m11.249s
+user	0m5.176s
+sys	0m0.926s
+Log select iteration 5
+clients_base_all after_index 5
+
+real	0m11.252s
+user	0m5.244s
+sys	0m0.858s
+Log select iteration 6
+clients_base_all after_index 6
+
+real	0m11.297s
+user	0m5.193s
+sys	0m0.964s
+Log select iteration 7
+clients_base_all after_index 7
+
+real	0m11.188s
+user	0m5.184s
+sys	0m0.841s
+Log select iteration 8
+clients_base_all after_index 8
+
+real	0m11.212s
+user	0m5.125s
+sys	0m0.900s
+Log select iteration 9
+clients_base_all after_index 9
+
+real	0m11.076s
+user	0m5.003s
+sys	0m0.907s
+Log select iteration 10
+clients_base_all after_index 10
+
+real	0m11.112s
+user	0m4.981s
+sys	0m0.992s
+Log select iteration 11
+clients_base_all after_index 11
+
+real	0m11.211s
+user	0m5.068s
+sys	0m0.992s
+Log select iteration 0
+client_id	first_name	last_name	email	city_id	department_id	company_id
+1691264	Carolina	Hurley	juan_cobb@fpk.org	435247	5	2124
+Log select iteration 1
+clients_base_where after_index 1
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 2
+clients_base_where after_index 2
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 3
+clients_base_where after_index 3
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.005s
+Log select iteration 4
+clients_base_where after_index 4
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 5
+clients_base_where after_index 5
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 6
+clients_base_where after_index 6
+
+real	0m0.006s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 7
+clients_base_where after_index 7
+
+real	0m0.005s
+user	0m0.000s
+sys	0m0.004s
+Log select iteration 8
+clients_base_where after_index 8
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+Log select iteration 9
+clients_base_where after_index 9
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.006s
+Log select iteration 10
+clients_base_where after_index 10
+
+real	0m0.013s
+user	0m0.005s
+sys	0m0.000s
+Log select iteration 11
+clients_base_where after_index 11
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
