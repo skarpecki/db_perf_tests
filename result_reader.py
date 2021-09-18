@@ -44,22 +44,27 @@ class TimeResult:
     def __init__(self, resultType: ResultType):
         self.resultType = resultType
         self.values = []
+        self.round_decimals = 4
     
     def addValue(self, value):
         self.values.append(value)
 
     def getUnfilteredStdDev(self):
-        return np.std(self.values)
+        stdddev = np.std(self.values)
+        return np.around(stdddev, self.round_decimals)
 
     def getUnfilteredMean(self):
-        return np.mean(self.values)
+        mean = np.mean(self.values)
+        return np.around(mean, self.round_decimals)
 
     def getFilteredStdDev(self, no_sd_outlier):
-        return np.std(self._removeOutliers(no_sd_outlier))
-    
+        stddev = np.std(self._removeOutliers(no_sd_outlier))
+        return np.around(stddev, self.round_decimals)
+
     def getFilteredMean(self, no_sd_outlier):
-        return np.mean(self._removeOutliers(no_sd_outlier))
-    
+        mean = np.mean(self._removeOutliers(no_sd_outlier))
+        return np.around(mean, self.round_decimals)
+
     def _removeOutliers(self, no_sd_outlier):
         """
         Method returns values that exceeds value [ mean (+/-) no_sd_outlier * standard_deviation ] of values array
