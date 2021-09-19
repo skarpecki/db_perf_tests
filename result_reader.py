@@ -256,7 +256,8 @@ class ResultsReader:
                              "user":            None,
                              "user_stddev":     None,
                              "sys":             None,
-                             "sys_stddev":      None}
+                             "sys_stddev":      None,
+                             "query_type":      None}
                              
         
     def getDataFrame(self, no_sd_outlier):
@@ -299,6 +300,10 @@ class ResultsReader:
                             self.results_dict["indexed_table"] = query
                         else:
                             self.results_dict["indexed_table"] = indexed_table
+                        if "all" in query:
+                            self.results_dict["query_type"] = "ALL"
+                        elif "where" in query:
+                            self.results_dict["query_type"] = "WHERE"
                         self.results_dict["was_indexed"] = was_indexed_bool
                         self.results_dict["result_size"] = SizeMapper().getQuerySize(self.test_name, query)
                         self.results_dict["query"] = query
