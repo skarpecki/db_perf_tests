@@ -7,7 +7,7 @@ RUN yum install time -y
 RUN yum install vim -y
 
 
-COPY ./skrypty/ /skrypty
 COPY ./dane/ /dane
+COPY ./skrypty/ /skrypty
 
 USER oracle

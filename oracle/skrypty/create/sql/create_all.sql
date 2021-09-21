@@ -10,7 +10,6 @@ CREATE TABLE clients_1 (
 	company_id int
 );
 
-
 CREATE TABLE clients_10 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
@@ -75,15 +74,3 @@ CREATE TABLE clients_1000000 (
 	department_id int,
 	company_id int
 );
-
-
-CREATE TABLE clients (
-	client_id int PRIMARY KEY,
-	first_name varchar(50),
-	last_name varchar(50),
-	email varchar(50),
-	city_id int,
-	department_id int,
-	company_id int
-);
-/
