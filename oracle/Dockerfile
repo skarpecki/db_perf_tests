@@ -7,7 +7,7 @@ RUN yum install time -y
 RUN yum install vim -y
 
 
-COPY ./dane/ /dane
-COPY ./skrypty/ /skrypty
+COPY --chown=oracle:oinstall ./dane/ /dane
+COPY --chown=oracle:oinstall ./skrypty/ /skrypty
 
 USER oracle
