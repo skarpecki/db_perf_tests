@@ -22,6 +22,6 @@ do
         else
             ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i "$import_script" > /dev/null ) |& tee "$results_path"'/'"$i"'.txt'
         fi
-        /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $truncate_script 
     done
+    /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $SA_PASSWORD -i $truncate_script 
 done

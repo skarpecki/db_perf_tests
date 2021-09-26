@@ -21,6 +21,6 @@ do
         else
             ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < "$import_script" > /dev/null ) |& tee "$results_path"'/'"$i"'.txt'
         fi
-        mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $truncate_script 
     done
+    mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $truncate_script 
 done
