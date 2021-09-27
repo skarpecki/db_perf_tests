@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=2
+count=15
 
 mkdir -p /results/
 /skrypty/log/bash/creates.sh |& tee /results/creates.txt
