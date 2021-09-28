@@ -27,7 +27,7 @@ do
         results_path="$base_path"'/results/'"$test_type"'/results_'"$cpu"'cpus'
         mkdir -p "$results_path"
         "$base_path"'/run.sh' "$cpu"
-        sleep 150
+        sleep 180
         docker exec -it "$container" '/skrypty/'"$test_type"'/run.sh'
         sleep 5
         docker cp "$container"':/home/oracle/results' "$results_path"
