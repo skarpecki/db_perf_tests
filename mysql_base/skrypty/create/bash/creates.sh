@@ -6,7 +6,7 @@ create_script="/skrypty/create/sql/create_all.sql"
 drop_script="/skrypty/create/sql/drop_all.sql"
 
 count=$1
-mysql -u "root" -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE IF NOT EXISTS perf_tests;" > /dev/null
+mysql -u "root" -p$MYSQL_ROOT_PASSWORD -e "CREATE DATABASE IF NOT EXISTS perf_tests;" 
 for i in $(seq 0 $count)
 do
     echo "Creating iteration: $i"
