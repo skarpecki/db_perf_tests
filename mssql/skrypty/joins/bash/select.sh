@@ -23,7 +23,7 @@ do
         echo "Joins iteration no $i"
         if [[ "$i" -eq "0" ]] 
         then
-            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -i $script | head -n 10
+            /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -i $script | head -n 100
         else
             echo $script_name $indexed_table $was_indexed $i
             ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD -i $script > /dev/null ) |& tee $results_path/$i.txt

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-count=11
+count=2
 
 mkdir -p /results/
 /skrypty/joins/bash/creates.sh |& tee /results/creates.txt
