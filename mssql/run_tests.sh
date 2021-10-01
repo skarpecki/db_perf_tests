@@ -1,13 +1,13 @@
 #!/bin/bash
 
 declare -a tests_types=(
-    "create"
-    "import"
-    "index"
-    "insert"
-    "log"
-    "group_by_order"
-    # "joins"
+    # "create"
+    # "import"
+    # "index"
+    # "insert"
+    # "log"
+    # "group_by_order"
+    "joins"
 )
 
 declare -a cpus=(
