@@ -2,8 +2,8 @@
 
 declare -a tests_types=(
   #  "create"
-    "import"
-  #  "index"
+  #  "import"
+    "index"
   #  "insert"
   #  "joins"
   #  "log"
