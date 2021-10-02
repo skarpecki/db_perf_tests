@@ -25,7 +25,7 @@ do
                 -Q "$create_index"
         else
             ( time /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD \
-                -Q "$create_index" ) \
+                -Q "$create_index" > /dev/null) \
                 |& tee "$results_path"'/'"$i"'.txt'
         fi
         /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P  $SA_PASSWORD \
