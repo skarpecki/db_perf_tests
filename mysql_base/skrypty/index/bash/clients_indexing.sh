@@ -25,7 +25,7 @@ do
                 -e "$create_index"
         else
             ( time mysql -u 'root' -p$MYSQL_ROOT_PASSWORD \
-                -e "$create_index" ) \
+                -e "$create_index" > /dev/null) \
                 |& tee "$results_path"'/'"$i"'.txt'
         fi
         mysql -u 'root' -p$MYSQL_ROOT_PASSWORD \
