@@ -2,8 +2,11 @@
 
 was_indexed=$1
 count=$2
-results_path="/home/oracle/results/insert/$was_indexed"
-results_base="/home/oracle/results"
+
+cpus_path='results_'"$cpus"'cpus'
+results_base='/home/oracle/results/insert/'"$cpus_path"'/results/index/clients'"$val"
+
+results_path="$results_base"'/insert/'"$was_indexed"
 mkdir -p "$results_path"
 mkdir -p "$results_base"'/create'
 mkdir -p "$results_base"'/import'

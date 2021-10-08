@@ -1,16 +1,21 @@
 #! /bin/bash
 
+
+
 selects_path="/skrypty/group_by_order/sql/selects"
 count=$2
 
 for script in $selects_path/*.sql
 do
-script_name=$(basename $script .sql)
-was_indexed=$1
-indexed_table=$script_name
+    script_name=$(basename $script .sql)
+    was_indexed=$1
+    indexed_table=$(basename $script_name _all)
+    indexed_table=$(basename $script_name _where)
 
-results_path="/home/oracle/results/select/$indexed_table/$was_indexed/$script_name"
-mkdir -p $results_path
+    cpus_path='results_'"$cpus"'cpus'
+    results_path='/home/oracle/results/group_by_order/'"$cpus_path"'/results/select/'"$indexed_table"'/'"$was_indexed"'/'"$script_name"
+    mkdir -p $results_path
+
     for i in $(seq 0 $count)
     do
         echo "Group by iteration: $i"

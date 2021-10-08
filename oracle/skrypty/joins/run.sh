@@ -1,9 +1,9 @@
 #! /bin/bash
 
 count=15
-results_path='/home/oracle/results'
+results_path='/home/oracle/joins/results'
 mkdir -p "$results_path"
 
-/skrypty/joins/bash/creates.sh |& tee "$results_path"'/creates.txt'
-/skrypty/joins/bash/imports.sh |& tee "$results_path"'/imports.txt'
+/skrypty/joins/bash/create.sh |& tee "$results_path"'/creates.txt'
+/skrypty/joins/bash/import.sh |& tee "$results_path"'/imports.txt'
 /skrypty/joins/timing/select_timing.sh $count |& tee "$results_path"'/timing.txt'

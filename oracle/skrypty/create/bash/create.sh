@@ -1,13 +1,14 @@
 #! /bin/bash
 
-results_path="/home/oracle/results/create"
-create_user_script="/skrypty/create/sql/create_user.sql"
+cpus_path='results_'"$cpus"'cpus'
+results_path='/home/oracle/results/create/'"$cpus_path"'/results/create'
+# create_user_script="/skrypty/create/sql/create_user.sql"
 create_tables_script="/skrypty/create/sql/create_all.sql"
 drop_tables_script="/skrypty/create/sql/drop_all.sql"
 mkdir -p $results_path
 
 count=$1
-echo exit | sqlplus sys/Oradoc_db1@ORCLCDB as sysdba @"$create_user_script" > /dev/null 
+# echo exit | sqlplus sys/Oradoc_db1@ORCLCDB as sysdba @"$create_user_script" > /dev/null 
 for i in $(seq 0 $count)
 do
     echo "Create iteration: $i"

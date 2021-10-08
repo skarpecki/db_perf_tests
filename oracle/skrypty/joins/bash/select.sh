@@ -15,7 +15,7 @@ count=$3
 
 for script_name in "${scripts_names[@]}"
 do
-    results_path="/results/select/$indexed_table/$was_indexed/$script_name"
+    results_path="/home/oracle/joins/results/select/$indexed_table/$was_indexed/$script_name"
     script="$scripts_path""$script_name"'.sql'
     mkdir -p $results_path
     for i in $(seq 0 $count)

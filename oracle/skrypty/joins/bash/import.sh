@@ -1,6 +1,6 @@
 #! /bin/bash
 
-logs_path='/home/oracle/results/import'
+logs_path='/home/oracle/joins/results/import'
 mkdir -p $logs_path
 
 for ctl_file in /skrypty/joins/sql/imports/*.ctl

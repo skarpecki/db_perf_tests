@@ -1,7 +1,8 @@
 #! /bin/bash
 
 count=15
-results_path=/home/oracle/results/
+cpus_path='results_'"$cpus"'cpus'
+results_path='/home/oracle/results/group_by_order/'"$cpus_path"'/results'
 mkdir -p $results_path
 
 /skrypty/group_by_order/bash/create.sh |& tee "$results_path"'/creates.txt'
