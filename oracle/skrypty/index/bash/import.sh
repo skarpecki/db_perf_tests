@@ -1,7 +1,8 @@
 #! /bin/bash
 
+cpus=$1
 cpus_path='results_'"$cpus"'cpus'
-logs_path='/home/oracle/results/index/'"$cpus_path"'/results/import'
+logs_path='/home/oracle/results/index/'"$cpus_path"'/results/import_logs'
 mkdir -p $logs_path
 
 for ctl_file in /skrypty/index/sql/imports/*.ctl

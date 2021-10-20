@@ -1,22 +1,26 @@
 #! /bin/bash
 
+
+
 declare -a scripts_names=( 
-                'one_join' 
+                # 'one_join' 
                 'one_join_where'
-                'two_joins'
+                # 'two_joins'
                 'two_joins_where'
-                'three_joins'
+                # 'three_joins'
                 'three_joins_where'
                 )
-scripts_path='/skrypty/joins/sql/selects/'
+scripts_path='/skrypty/joins/sql/selects'
 indexed_table=$1
 was_indexed=$2
-count=$3
+cpus=$3
+count=$4
+cpus_path='results_'"$cpus"'cpus'
 
 for script_name in "${scripts_names[@]}"
 do
-    results_path="/home/oracle/joins/results/select/$indexed_table/$was_indexed/$script_name"
-    script="$scripts_path""$script_name"'.sql'
+    results_path='/home/oracle/results/joins/'"$cpus_path"'/results/select/'"$indexed_table"'/'"$was_indexed"'/'"$script_name"
+    script="$scripts_path"'/'"$script_name"'.sql'
     mkdir -p $results_path
     for i in $(seq 0 $count)
     do

@@ -1,5 +1,3 @@
-ALTER SESSION SET CURRENT_SCHEMA = PERF_TESTS;
-
 CREATE TABLE clients (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),

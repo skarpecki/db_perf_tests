@@ -1,5 +1,6 @@
 #! /bin/bash
 
+cpus=$1
 cpus_path='results_'"$cpus"'cpus'
 logs_path='/home/oracle/results/log/'"$cpus_path"'/results/import_logs'
 mkdir -p $logs_path

@@ -1,19 +1,22 @@
 #! /bin/bash
 
+
 selects_path="/skrypty/log/sql/selects"
-count=$2
+cpus_path='results_'"$cpus"'cpus'
 
 for script in $selects_path/*.sql
 do
-script_name=$(basename $script .sql)
-was_indexed=$1
-indexed_table=$(basename $script_name _all)
-indexed_table=$(basename $script_name _where)
+    script_name=$(basename $script .sql)
+    was_indexed=$1
+    cpus=$2
+    count=$3
+    indexed_table=$(basename $script_name _all)
+    indexed_table=$(basename $script_name _where)
+    indexed_table=$(basename $script_name _base)
 
-cpus_path='results_'"$cpus"'cpus'
-results_path='/home/oracle/results/log/'"$cpus_path"'/results/select/'"$indexed_table"'/'"$was_indexed"'/'"$script_name"
+    results_path='/home/oracle/results/log/'"$cpus_path"'/results/select/'"$indexed_table"'/'"$was_indexed"'/'"$script_name"
 
-mkdir -p $results_path
+    mkdir -p $results_path
     for i in $(seq 0 $count)
     do
         echo "Log select iteration $i"

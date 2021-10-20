@@ -2,9 +2,10 @@
 
 was_indexed=$1
 count=$2
+cpus=$3
 
 cpus_path='results_'"$cpus"'cpus'
-results_base='/home/oracle/results/insert/'"$cpus_path"'/results/index/clients'"$val"
+results_base='/home/oracle/results/insert/'"$cpus_path"'/results'
 
 results_path="$results_base"'/insert/'"$was_indexed"
 mkdir -p "$results_path"
@@ -17,7 +18,7 @@ for i in $(seq 0 $count)
 do
     echo "Insert iteration no $i"
     /skrypty/insert/bash/create.sh |& tee "$results_base"'/create/creates_'"$i"'.txt'
-    /skrypty/insert/bash/import.sh |& tee "$results_base"'/import/imports_'"$i"'.txt'
+    /skrypty/insert/bash/import.sh $cpus $i |& tee "$results_base"'/import/imports_'"$i"'.txt'
     if [[ "$was_indexed" == "after_index" ]]
     then
         /skrypty/insert/bash/clients_indexing.sh |& tee "$results_base"'/index/index_'"$i"'.txt'

@@ -1,6 +1,8 @@
 #! /bin/bash
 
 count=$1
+cpus=$2
+cpus_path='results_'"$cpus"'cpus'
 
 for pow in $(seq 0 7)
 do
@@ -17,7 +19,6 @@ do
         create_index='CREATE INDEX IX_clients'"$val"' ON perf_tests.clients'"$val"' (first_name, last_name);'
         drop_index='DROP INDEX IX_clients'"$val"';'
 
-        cpus_path='results_'"$cpus"'cpus'
         results_path='/home/oracle/results/index/'"$cpus_path"'/results/index/clients'"$val"
 
         mkdir -p "$results_path"

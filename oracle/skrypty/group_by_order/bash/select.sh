@@ -1,9 +1,10 @@
 #! /bin/bash
 
-
+count=$2
+cpus=$3
+cpus_path='results_'"$cpus"'cpus'
 
 selects_path="/skrypty/group_by_order/sql/selects"
-count=$2
 
 for script in $selects_path/*.sql
 do
@@ -11,8 +12,8 @@ do
     was_indexed=$1
     indexed_table=$(basename $script_name _all)
     indexed_table=$(basename $script_name _where)
+    indexed_table=$(basename $script_name _base)
 
-    cpus_path='results_'"$cpus"'cpus'
     results_path='/home/oracle/results/group_by_order/'"$cpus_path"'/results/select/'"$indexed_table"'/'"$was_indexed"'/'"$script_name"
     mkdir -p $results_path
 
