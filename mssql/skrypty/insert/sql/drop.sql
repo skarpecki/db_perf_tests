@@ -1,1 +1,0 @@
-DROP TABLE perf_tests.dbo.clients;

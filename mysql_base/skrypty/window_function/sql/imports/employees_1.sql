@@ -1,3 +1,0 @@
-LOAD DATA INFILE '/dane/employees_1.csv' INTO TABLE perf_tests.employees_1
-FIELDS TERMINATED BY ',' LINES TERMINATED BY '\r\n'
-IGNORE 1 ROWS;
