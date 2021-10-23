@@ -40,9 +40,10 @@ class TestName(Enum):
     INSERT = "insert"
     JOINS = "joins"
     LOG = "log"
+    WINDOW_FUNCTION = "window_function"
 
     def getTestType(self):
-        if self.value in ["group_by_order", "log", "joins"]:
+        if self.value in ["group_by_order", "log", "joins", "window_function"]:
             return TestType.SELECT
         else:
             return TestType(self.value)
@@ -74,7 +75,7 @@ class SizeMapper:
             return None
         elif test_name == TestName.INSERT:
             return 1000
-        elif test_name == TestName.IMPORT or test_name == TestName.INDEX:
+        elif test_name == TestName.IMPORT:
             return self._getImportIndexQuerySize(query)
         elif test_name == TestName.GROUP_BY_ORDER:
             return self._getGroupByQuerySize(query)
@@ -83,11 +84,30 @@ class SizeMapper:
             return self._getLogQuerySize(query_type, query)
         elif test_name == TestName.JOINS:
             return self._getJoinsQuerySize(query)
+        elif test_name == TestName.WINDOW_FUNCTION:
+            return self._getWindowFunctionQuerySize(query)
         else:
             return None
             
-
-
+    def getTableSize(self, query: str):
+        queries_map = {"clients_1_all":       1,
+                       "clients_10_all":      10,
+                       "clients_100_all":     100,
+                       "clients_1000_all":    1000,
+                       "clients_10000_all":   10000,
+                       "clients_100000_all":  100000,
+                       "clients_1000000_all": 1000000,
+                       "clients_base_all":    10000000,
+                       "clients_1_where":       1,
+                       "clients_10_where":      10,
+                       "clients_100_where":     100,
+                       "clients_1000_where":    1000,
+                       "clients_10000_where":   10000,
+                       "clients_100000_where":  100000,
+                       "clients_1000000_where": 1000000,
+                       "clients_base_where":    10000000}
+        return queries_map.get(query, None)
+        
     def _getImportIndexQuerySize(self, query: str):
         import_map = {"clients_1":       1,
                       "clients_10":      10,
@@ -133,6 +153,17 @@ class SizeMapper:
                     "three_joins_where": 3,
                     "three_joins": 100000}
         return join_map.get(query, None)
+
+    def _getWindowFunctionQuerySize(self, query: str):
+        window_map = {"employees_1_all":       1,
+                      "employees_10_all":      10,
+                      "employees_100_all":     100,
+                      "employees_1000_all":    1000,
+                      "employees_10000_all":   10000,
+                      "employees_100000_all":  100000,
+                      "employees_1000000_all": 1000000,
+                      "employees_base_all":    10000000}
+        return window_map.get(query, None)
 
 class TimeResult:
     def __init__(self, resultType: ResultType):
@@ -257,7 +288,9 @@ class ResultsReader:
                              "user_stddev":     None,
                              "sys":             None,
                              "sys_stddev":      None,
-                             "query_type":      None}
+                             "query_type":      None,
+                             "table_size":      None
+                             }
                              
         
     def getDataFrame(self, no_sd_outlier):
@@ -296,7 +329,9 @@ class ResultsReader:
                         real_result = results_catalog_reader.getRealResult()
                         user_result = results_catalog_reader.getUserResult()
                         sys_result = results_catalog_reader.getSysResult()
-                        if self.test_name == TestName.GROUP_BY_ORDER or self.test_name == TestName.LOG:
+                        if self.test_name == TestName.GROUP_BY_ORDER or \
+                           self.test_name == TestName.LOG or \
+                           self.test_name == TestName.WINDOW_FUNCTION:
                             self.results_dict["indexed_table"] = query
                         else:
                             self.results_dict["indexed_table"] = indexed_table
@@ -306,6 +341,7 @@ class ResultsReader:
                             self.results_dict["query_type"] = "WHERE"
                         self.results_dict["was_indexed"] = was_indexed_bool
                         self.results_dict["result_size"] = SizeMapper().getQuerySize(self.test_name, query)
+                        self.results_dict["table_size"] = SizeMapper().getTableSize(query)
                         self.results_dict["query"] = query
                         self._fillResultTimes(real_result, user_result, sys_result, no_sd_outlier)
                         df = df.append(self.results_dict, ignore_index=True)
@@ -410,8 +446,10 @@ if __name__=="__main__":
     mysql_innodb_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_innodb"
     mysql_myisam_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mysql_myisam"
     mariadb_innodb_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mariadb_innodb"
+    mariadb_aria_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mariadb_aria"
     mssql_path = r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\mssql"
-
+    postgres_path = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\postgres"
+    oracle_path = r"C:\Users\Szymon\OneDrive\praca_inzyneirska\wyniki\oracle"
     cpu_cores_mapper = CPUCoresMapper({"results_1cpus": 1,
                                        "results_2cpus": 2,
                                        "results_4cpus": 4})
@@ -422,6 +460,9 @@ if __name__=="__main__":
     df = df.append(DatabaseResultsReader(mysql_myisam_path, "MySQL", "MyISAM", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
     df = df.append(DatabaseResultsReader(mariadb_innodb_path, "MariaDB", "InnoDB", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
     df = df.append(DatabaseResultsReader(mssql_path, "MSSQL", "MSSQL", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
+    df = df.append(DatabaseResultsReader(postgres_path, "Postgres", "Postgres", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
+    df = df.append(DatabaseResultsReader(mariadb_aria_path, "MariaDB", "Aria", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
+    df = df.append(DatabaseResultsReader(oracle_path, "Oracle", "Oracle", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
     
-    df.to_csv(r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\results_v1.csv")
+    df.to_csv(r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\results_v2.csv")
 
