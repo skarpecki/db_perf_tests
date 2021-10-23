@@ -15,10 +15,10 @@ mkdir -p $results_path
         echo "Window function iteration: $i"
         if [[ "$i" -eq "0" ]] 
         then
-            mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script  | head -n 10
+            psql --username "postgres" --dbname "perf_tests" -f $script  | head -n 10
         else
             echo $script_name $was_indexed $i
-            ( time mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script &> /dev/null ) |& tee $results_path/$i.txt
+            ( time psql --username "postgres" --dbname "perf_tests" -f $script &> /dev/null ) |& tee $results_path/$i.txt
         fi
     done
 done

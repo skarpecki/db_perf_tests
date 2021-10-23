@@ -3,6 +3,5 @@
 
 for script in /skrypty/window_function/sql/imports/*.sql
 do
-script_name=$(basename $script .sql)
-mysql -u "root" -p$MYSQL_ROOT_PASSWORD < $script 
+    psql --username "postgres" --dbname "perf_tests" -f $script
 done
