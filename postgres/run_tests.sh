@@ -1,19 +1,19 @@
 #!/bin/bash
 
 declare -a tests_types=(
-  #  "create"
-  #  "import"
-    "index"
-  #  "insert"
-  #  "joins"
-  #  "log"
-  #  "group_by_order"
+   # "create"
+   # "import"
+   # "index"
+   # "insert"
+   # "log"
+   # "group_by_order"
+   "joins"
 )
 
 declare -a cpus=(
-    # 1
-    2  
-    # 4
+   # 1
+   # 2  
+   4
 )
 
 base_path="/home/dev/praca_inz/db_perf_tests/postgres"

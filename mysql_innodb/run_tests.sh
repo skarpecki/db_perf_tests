@@ -5,9 +5,10 @@ declare -a tests_types=(
   #  "import"
   #  "index"
   #  "insert"
-    "joins"
+  #  "joins"
   #  "log"
-  #  "group_by_order"
+  "group_by_order"
+  #  "window_function"
 )
 
 declare -a cpus=(

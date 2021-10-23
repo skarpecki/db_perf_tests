@@ -6,8 +6,9 @@ declare -a tests_types=(
 #   "index"
 #   "insert"
 #   "log"
-#   "group_by_order"
-  "joins"
+    "group_by_order"
+#   "joins"
+#   "window_function"
 )
 
 declare -a cpus=(

@@ -1,4 +1,4 @@
-FROM mariadb:10.5.12
+FROM mariadb:10.5.12-focal
 
 ENV DEBIAN_FRONTEND=noninteractive 
 ENV TZ=Euorpe/Warsaw
