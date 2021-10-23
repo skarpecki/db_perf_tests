@@ -1,0 +1,1 @@
+SELECT * FROM perf_tests.clients_1000;
