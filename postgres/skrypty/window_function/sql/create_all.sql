@@ -95,5 +95,5 @@ CREATE TABLE IF NOT EXISTS employees (
 
 CREATE TABLE departments (
 	department_id int PRIMARY KEY,
-	`name` varchar(31)
+	name varchar(31)
 );
