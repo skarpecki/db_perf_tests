@@ -1,6 +1,6 @@
 ALTER SESSION SET CURRENT_SCHEMA = PERF_TESTS;
 
-CREATE TABLE clients (
+CREATE TABLE employees (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -11,7 +11,7 @@ CREATE TABLE clients (
 );
 
 
-CREATE TABLE clients_1 (
+CREATE TABLE employees_1 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -21,18 +21,7 @@ CREATE TABLE clients_1 (
 	company_id int
 );
 
-CREATE TABLE clients_10 (
-	client_id int PRIMARY KEY,
-	first_name varchar(50),
-	last_name varchar(50),
-	email varchar(50),
-	city_id int,
-	department_id int,
-	company_id int
-);
-
-
-CREATE TABLE clients_100 (
+CREATE TABLE employees_10 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -43,7 +32,7 @@ CREATE TABLE clients_100 (
 );
 
 
-CREATE TABLE clients_1000 (
+CREATE TABLE employees_100 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -54,7 +43,7 @@ CREATE TABLE clients_1000 (
 );
 
 
-CREATE TABLE clients_10000 (
+CREATE TABLE employees_1000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -65,7 +54,7 @@ CREATE TABLE clients_10000 (
 );
 
 
-CREATE TABLE clients_100000 (
+CREATE TABLE employees_10000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
@@ -76,7 +65,18 @@ CREATE TABLE clients_100000 (
 );
 
 
-CREATE TABLE clients_1000000 (
+CREATE TABLE employees_100000 (
+	client_id int PRIMARY KEY,
+	first_name varchar(50),
+	last_name varchar(50),
+	email varchar(50),
+	city_id int,
+	department_id int,
+	company_id int
+);
+
+
+CREATE TABLE employees_1000000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
