@@ -1,7 +1,7 @@
 #! /bin/bash
 
-count=$2
-cpus=$3
+cpus=$2
+count=$3
 cpus_path='results_'"$cpus"'cpus'
 
 selects_path="/skrypty/window_function/sql/selects"
