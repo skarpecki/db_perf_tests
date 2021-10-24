@@ -1,67 +1,62 @@
 ALTER SESSION SET CURRENT_SCHEMA = PERF_TESTS;
 
-CREATE TABLE employees (
+CREATE TABLE IF NOT EXISTS employees_1 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
-CREATE TABLE employees_1 (
+CREATE TABLE IF NOT EXISTS employees_10 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
-);
-
-CREATE TABLE employees_10 (
-	client_id int PRIMARY KEY,
-	first_name varchar(50),
-	last_name varchar(50),
-	email varchar(50),
-	city_id int,
-	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
-CREATE TABLE employees_100 (
+CREATE TABLE IF NOT EXISTS employees_100 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
-CREATE TABLE employees_1000 (
+CREATE TABLE IF NOT EXISTS employees_1000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
-CREATE TABLE employees_10000 (
+CREATE TABLE IF NOT EXISTS employees_10000 (
 	client_id int PRIMARY KEY,
 	first_name varchar(50),
 	last_name varchar(50),
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
@@ -72,7 +67,8 @@ CREATE TABLE employees_100000 (
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
 );
 
 
@@ -83,7 +79,20 @@ CREATE TABLE employees_1000000 (
 	email varchar(50),
 	city_id int,
 	department_id int,
-	company_id int
+	company_id int,
+	salary float
+);
+
+
+CREATE TABLE employees (
+	client_id int PRIMARY KEY,
+	first_name varchar(50),
+	last_name varchar(50),
+	email varchar(50),
+	city_id int,
+	department_id int,
+	company_id int,
+	salary float
 );
 
 CREATE TABLE departments (
