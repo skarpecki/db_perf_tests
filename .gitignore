@@ -63,7 +63,6 @@ oracle/index
 oracle/insert
 oracle/joins
 oracle/log
-oracle/window_function
 
 postgres/create
 postgres/group_by_order

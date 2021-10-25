@@ -105,7 +105,20 @@ class SizeMapper:
                        "clients_10000_where":   10000,
                        "clients_100000_where":  100000,
                        "clients_1000000_where": 1000000,
-                       "clients_base_where":    10000000}
+                       "clients_base_where":    10000000,
+                       "employees_1_all":       1,
+                       "employees_10_all":      10,
+                       "employees_100_all":     100,
+                       "employees_1000_all":    1000,
+                       "employees_10000_all":   10000,
+                       "employees_100000_all":  100000,
+                       "employees_1000000_all": 1000000,
+                       "employees_base_all":    10000000,
+                       "cities":                1000000,
+                       "clients":               10000000,
+                       "companies":             10000,
+                       "departments":           8,
+                       "orders":                100000}
         return queries_map.get(query, None)
         
     def _getImportIndexQuerySize(self, query: str):
