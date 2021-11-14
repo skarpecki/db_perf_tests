@@ -75,7 +75,7 @@ class SizeMapper:
             return None
         elif test_name == TestName.INSERT:
             return 1000
-        elif test_name == TestName.IMPORT:
+        elif test_name == TestName.IMPORT or test_name == TestName.INDEX:
             return self._getImportIndexQuerySize(query)
         elif test_name == TestName.GROUP_BY_ORDER:
             return self._getGroupByQuerySize(query)
@@ -383,6 +383,9 @@ class ResultsReader:
 
             self.results_dict["result_size"] = SizeMapper().getQuerySize(self.test_name, query)
             self.results_dict["query"] = query
+            self.results_dict["table_size"] = self.results_dict["result_size"]
+            self.results_dict["query_type"] = "ALL"
+            self.results_dict["was_indexed"] = 0
             if self.test_type == TestType.INDEX:
                 self.results_dict["indexed_table"] = query
             self._fillResultTimes(real_result, user_result, sys_result, no_sd_outlier)
@@ -406,6 +409,8 @@ class ResultsReader:
             self.results_dict["indexed_table"] = "clients"
             self.results_dict["was_indexed"] = was_indexed_bool
             self.results_dict["result_size"] = 1000
+            self.results_dict["table_size"] = 100000
+            self.results_dict["query_type"] = "ALL"
 
             self._fillResultTimes(real_result, user_result, sys_result, no_sd_outlier)
             df = df.append(self.results_dict, ignore_index=True)
@@ -477,4 +482,4 @@ if __name__=="__main__":
     df = df.append(DatabaseResultsReader(mariadb_aria_path, "MariaDB", "Aria", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
     df = df.append(DatabaseResultsReader(oracle_path, "Oracle", "Oracle", cpu_cores_mapper, indexing_mapper).getDataFrame(2), ignore_index=True)
     
-#    df.to_csv(r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\results_v2.csv")
+    df.to_csv(r"C:\Users\szymon\OneDrive\praca_inzyneirska\wyniki\results_v2.csv")
